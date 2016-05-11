@@ -26,10 +26,6 @@ class IHFLoginViewController: UIViewController,IHFLoginViewDelegate {
     func jumpIntoNestViewController() {
         
         
-        let accontModel = IHFMAccountModel.shareSingleOne
-        
-        print(accontModel.accountName)
-        
         let risVC = IHFRisViewController()
         self.presentViewController(risVC, animated: true) { () -> Void in
             print("跳转下一个vc喔")

@@ -33,6 +33,7 @@
 		99236A6C1CE1CABF007B558D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99236A6A1CE1CABF007B558D /* LaunchScreen.storyboard */; };
 		99236A771CE1CABF007B558D /* EgamiCidemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A761CE1CABF007B558D /* EgamiCidemTests.swift */; };
 		99236A821CE1CABF007B558D /* EgamiCidemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A811CE1CABF007B558D /* EgamiCidemUITests.swift */; };
+		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		99236A811CE1CABF007B558D /* EgamiCidemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgamiCidemUITests.swift; sourceTree = "<group>"; };
 		99236A831CE1CABF007B558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99236AD71CE1CD15007B558D /* EgamiCidem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EgamiCidem-Bridging-Header.h"; sourceTree = "<group>"; };
+		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,9 @@
 		9916E7991CE1D7C4001AAFAF /* IHFRis */ = {
 			isa = PBXGroup;
 			children = (
+				99D1BB5E1CE2DB82007A438C /* model */,
+				99D1BB5F1CE2DB82007A438C /* view */,
+				99D1BB601CE2DB82007A438C /* viewcontroller */,
 				9916E79A1CE1D7C4001AAFAF /* IHFRisViewController.swift */,
 			);
 			path = IHFRis;
@@ -326,6 +331,28 @@
 			path = EgamiCidemUITests;
 			sourceTree = "<group>";
 		};
+		99D1BB5E1CE2DB82007A438C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		99D1BB5F1CE2DB82007A438C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		99D1BB601CE2DB82007A438C /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -465,6 +492,7 @@
 				9916E7C81CE1D865001AAFAF /* AFHTTPRequestOperation.m in Sources */,
 				9916E7A71CE1D83B001AAFAF /* IHFN_Login.swift in Sources */,
 				9916E7C91CE1D865001AAFAF /* AFHTTPRequestOperationManager.m in Sources */,
+				99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */,
 				99236A641CE1CABF007B558D /* ViewController.swift in Sources */,
 				9916E7A41CE1D813001AAFAF /* IHFSupportDefine.swift in Sources */,
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,

@@ -12,7 +12,11 @@ class IHFRisViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.redColor()
+
+        let cc :CGRect?
+        
+
+
         // Do any additional setup after loading the view.
     }
 

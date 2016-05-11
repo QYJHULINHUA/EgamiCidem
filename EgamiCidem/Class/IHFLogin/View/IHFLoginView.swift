@@ -72,26 +72,47 @@ class IHFLoginView: UIView {
         {
             accontModel.accountID = userField.text!
             accontModel.accountPW = pwField.text!
+            
             let loginModel = IHFN_Login()
+            weak var weakSelf:IHFLoginView? = self
+            
             loginModel.loginAccount(accoutID: userField.text!, password: pwField.text!, callback: { (statusCode, response) -> Void in
-
+                
+                var loginResult = (loginStauts : 0 ,longingMsg :"", data:[:])
                 if statusCode == 1
                 {
                     
+                    let dic = response as! NSDictionary
+                    let status = dic["status"] as! Int
+                    let msg = dic["msg"] as! String
                     
-
+                    loginResult.loginStauts = status
+                    loginResult.longingMsg  = msg
                     
+                   if loginResult.loginStauts == 1
+                   {
+                    let dic = dic["data"] as! NSDictionary
+                    loginResult.data = dic
+                    let accontMl = IHFMAccountModel.shareSingleOne
                     
+                    accontMl.setAccountInfo(logDci : loginResult.data)
+                    
+                    }
                 }else
                 {
+                    let errorStr = response
+                    loginResult.loginStauts = 0
+                    loginResult.longingMsg  = errorStr as! String
                     
                 }
-                
-                
+                if loginResult.loginStauts == 0
+                {
+                   SweetAlert().showAlert(loginResult.longingMsg)
+                }else
+                {
+                    weakSelf?.successJumpIntoRisViewControoler()
+                }
             })
-            
-
-            
         }
     }
     

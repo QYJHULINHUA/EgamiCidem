@@ -15,5 +15,18 @@ class IHFMAccountModel: NSObject {
     var accountName = "&&用户名字"
     var accountID = "&&用户账户"
     var accountPW = "&&用户密码"
+    var account_uid = "0"
+    var write = "0"
+    var check = "0"
+    var token = "830aagd"
+    
+    func setAccountInfo(logDci dic : NSDictionary)
+    {
+        accountName = dic["doctor_name"] as! String
+        account_uid = dic["uid"] as! String
+        write = dic["write"] as! String
+        check = dic["check"] as! String
+        token = dic["token"] as! String
+    }
     
 }
