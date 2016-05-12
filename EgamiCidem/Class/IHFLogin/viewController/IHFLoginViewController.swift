@@ -28,7 +28,7 @@ class IHFLoginViewController: UIViewController,IHFLoginViewDelegate {
         
         let risVC = IHFRisViewController()
         self.presentViewController(risVC, animated: true) { () -> Void in
-            print("跳转下一个vc喔")
+//            print("跳转下一个vc喔")
         }
     }
 

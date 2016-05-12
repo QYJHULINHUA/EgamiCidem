@@ -10,16 +10,109 @@ import UIKit
 
 class IHFRisViewController: UIViewController {
 
+    var leftV : IHFRisLeftView? = nil
+    let rightV = IHFRisRightView()
+    let Sidebar = UIView()
+    var swipeGesture:UIPanGestureRecognizer!
+    var tapGesture:UITapGestureRecognizer!
+    
+    let sideView = UIView()
+    
+    let sideViewSize = CGSizeMake(0.33 * screen_width, screen_height)
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let cc :CGRect?
+        self.view.backgroundColor = UIColor.blackColor();
+        let leftVRect = CGRectMake(0, 0, 0.33 * screen_width, screen_height);
+        leftV = IHFRisLeftView().initWithFatherVC(fatherVC :self ,frame :leftVRect);
+        self.view.addSubview(leftV!);
         
-
-
+        rightV.frame = CGRectMake(0.33 * screen_width, 0, 0.67 * screen_width, screen_height)
+        rightV.fatherVC = self
+        self.view.addSubview(rightV)
+        rightV.backgroundColor = UIColor.blackColor()
+        
+        
+        Sidebar.frame = CGRectMake(0, 0, 3.0, screen_height)
+        Sidebar.backgroundColor = UIColor.blackColor()
+        Sidebar.alpha = 0.1;
+        self.view.addSubview(Sidebar)
+        
+        swipeGesture = UIPanGestureRecognizer(target: self,action: #selector(IHFRisViewController.swipeSideBar(_:)));
+        swipeGesture.maximumNumberOfTouches = 1;
+        tapGesture = UITapGestureRecognizer(target: self,action: #selector(IHFRisViewController.tapSideBar));
+        
+        Sidebar.addGestureRecognizer(swipeGesture)
+        sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width, 0), size:sideViewSize);
+        sideView.backgroundColor = UIColor.yellowColor()
+        self.view.addSubview(sideView)
+        
         // Do any additional setup after loading the view.
     }
+    
 
+    
+    func swipeSideBar(swipe:UIPanGestureRecognizer)
+    {
+        Sidebar.alpha = 0.8;
+        Sidebar.frame = self.view.bounds;
+        
+        var  point = swipe.locationInView(self.view)
+        if point.x < 0 {
+            point.x = 0
+        }
+        if point.x > 0.33 * screen_width {
+            point.x = 0.33 * screen_width
+        }
+        
+        sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width + point.x, 0), size:self.sideViewSize);
+        
+        if swipe.state == UIGestureRecognizerState.Ended {
+            if point.x < 0.05 * screen_width {
+                
+                UIView.animateWithDuration(0.2, animations: {
+                    self.sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width, 0), size:self.sideViewSize);
+                    
+                    
+                    }, completion: { (false) in
+                        self.Sidebar.alpha = 0.1;
+                        self.Sidebar.frame = CGRectMake(0, 0, 3.0, screen_height)
+                })
+                
+            }else
+            {
+                UIView.animateWithDuration(0.2) {
+                    self.sideView.frame = CGRect(origin:CGPointMake(0, 0), size:self.sideViewSize);
+                };
+                
+                Sidebar.addGestureRecognizer(tapGesture)
+                Sidebar.removeGestureRecognizer(swipeGesture)
+
+            }
+        }
+    }
+    
+    func tapSideBar()
+    {
+        Sidebar.frame = CGRectMake(0, 0, 3.0, screen_height)
+        Sidebar.alpha = 0.1;
+        Sidebar.addGestureRecognizer(swipeGesture)
+        Sidebar.removeGestureRecognizer(tapGesture)
+        
+        UIView.animateWithDuration(0.3) {
+            self.sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width, 0), size:self.sideViewSize);
+        };
+    }
+    
+    
+
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -9,32 +9,97 @@
 import UIKit
 
 class IHFRisLeftView: UIView {
-    
+
     weak var fatherVC:IHFRisViewController?
+    var topBar: IHFRisLeftTopBar?
+    var risTableView : IHFRisListView!
     
-    func FatherVC(fatherVC vc:IHFRisViewController,frame frame1:CGRect) -> (IHFRisLeftView)
+
+    func initWithFatherVC(fatherVC vc: IHFRisViewController,frame frme1: CGRect) -> IHFRisLeftView
     {
-        let instance = IHFRisLeftView.init(frame: frame1)
+        let instance = IHFRisLeftView.init(frame: frme1);
+        instance.fatherVC = vc;
         return instance;
     }
     
     required override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = UIColor.redColor()
+        super.init(frame: frame);
         
+        // 添加顶部栏
+        topBar = IHFRisLeftTopBar.init(frame: CGRectMake(0, 0, frame.size.width, 50));
+        self.addSubview(topBar!);
+        topBar!.leftBtn.addTarget(self, action: #selector(IHFRisLeftView.touchLeftButton(leftBtn:)), forControlEvents: UIControlEvents.TouchUpInside)
+        risTableView = IHFRisListView.init(frame: CGRectMake(0, 50, frame.size.width, frame.size.height - 50 ));
+        self.addSubview(risTableView);
+        
+        
+        
+        
+    }
+    
+    func touchLeftButton(leftBtn btn:UIButton)
+    {
+        if self.fatherVC == nil {
+            return;
+        }
+        let searchView = IHFRisSearchView.init(frame: fatherVC!.view.bounds);
+        searchView.backgroundColor = UIColor.blackColor();
+        fatherVC!.view.addSubview(searchView);
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
+
+/// 顶部工具栏
+//protocol IHFRisLeftTopBarDelegate:NSObjectProtocol{
+//    
+//}
+
+class IHFRisLeftTopBar: UIView {
+    
+    let leftBtn = UIButton()
+    let rightBtn = UIButton()
+    let centerLabel = UILabel()
+    
+//    weak var delegate:IHFLoginViewDelegate? //代理
+    
+    required override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.blackColor()
+        
+        leftBtn.frame = CGRectMake(20, 10, 40, 40);
+        leftBtn.setImage(UIImage.init(named: "IHFMsearch"), forState: UIControlState.Normal)
+        centerLabel.frame = CGRectMake(60, 10, frame.size.width - 110, 40);
+        centerLabel.text = "所有影像";
+        centerLabel.textColor = UIColor.whiteColor();
+        centerLabel.textAlignment = NSTextAlignment.Center;
+        rightBtn.frame = CGRectMake(frame.size.width - 50, 10, 40, 40);
+        rightBtn.setImage(UIImage.init(named: "IHFMsearch"), forState: UIControlState.Normal)
+        self.addSubview(leftBtn)
+        self.addSubview(centerLabel)
+        self.addSubview(rightBtn)
+        
+    }
+    
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

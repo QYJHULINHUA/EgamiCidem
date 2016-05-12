@@ -48,7 +48,7 @@ class IHFLoginView: UIView {
         
         userField.textColor = UIColor.whiteColor()
         pwField.textColor = UIColor.whiteColor()
-        loadBtn.addTarget(self, action: "loginBtnTouch:", forControlEvents: UIControlEvents.TouchUpInside)
+        loadBtn.addTarget(self, action: #selector(IHFLoginView.loginBtnTouch(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         userField.text = "fskzr"
         pwField.text = "1234567"
     

@@ -26,6 +26,8 @@
 		9916E7D01CE1D865001AAFAF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9916E7C01CE1D865001AAFAF /* AFURLSessionManager.m */; };
 		9916E7D11CE1D865001AAFAF /* CKHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9916E7C21CE1D865001AAFAF /* CKHttpClient.m */; };
 		9916E7D21CE1D865001AAFAF /* IHFMAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916E7C31CE1D865001AAFAF /* IHFMAlertView.swift */; };
+		991774EE1CE30270007608D4 /* IHFRisRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991774ED1CE30270007608D4 /* IHFRisRightView.swift */; };
+		991774F01CE3133C007608D4 /* IHFRisSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991774EF1CE3133C007608D4 /* IHFRisSearchView.swift */; };
 		99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A611CE1CABF007B558D /* AppDelegate.swift */; };
 		99236A641CE1CABF007B558D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A631CE1CABF007B558D /* ViewController.swift */; };
 		99236A671CE1CABF007B558D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99236A651CE1CABF007B558D /* Main.storyboard */; };
@@ -33,6 +35,22 @@
 		99236A6C1CE1CABF007B558D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99236A6A1CE1CABF007B558D /* LaunchScreen.storyboard */; };
 		99236A771CE1CABF007B558D /* EgamiCidemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A761CE1CABF007B558D /* EgamiCidemTests.swift */; };
 		99236A821CE1CABF007B558D /* EgamiCidemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99236A811CE1CABF007B558D /* EgamiCidemUITests.swift */; };
+		992B034C1CE345E200B72E6D /* IHFRisListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B034B1CE345E200B72E6D /* IHFRisListView.swift */; };
+		992B03531CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B034E1CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift */; };
+		992B03541CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B034F1CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift */; };
+		992B03551CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03501CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift */; };
+		992B03561CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03511CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		992B03571CE3478900B72E6D /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03521CE3478900B72E6D /* DGElasticPullToRefreshView.swift */; };
+		992B03651CE3521C00B72E6D /* ThFootRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B035A1CE3521C00B72E6D /* ThFootRefreshView.swift */; };
+		992B03661CE3521C00B72E6D /* ThHeadArrowRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B035C1CE3521C00B72E6D /* ThHeadArrowRefreshView.swift */; };
+		992B03671CE3521C00B72E6D /* ThHeadBounceRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B035D1CE3521C00B72E6D /* ThHeadBounceRefreshView.swift */; };
+		992B03681CE3521C00B72E6D /* ThHeadRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B035E1CE3521C00B72E6D /* ThHeadRefreshView.swift */; };
+		992B03691CE3521C00B72E6D /* ThRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 992B035F1CE3521C00B72E6D /* ThRefresh.bundle */; };
+		992B036A1CE3521C00B72E6D /* ThRefreshBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03601CE3521C00B72E6D /* ThRefreshBasicView.swift */; };
+		992B036B1CE3521C00B72E6D /* ThRefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03611CE3521C00B72E6D /* ThRefreshConst.swift */; };
+		992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */; };
+		992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */; };
+		992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03641CE3521C00B72E6D /* UIView+Extension.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +102,8 @@
 		9916E7C11CE1D865001AAFAF /* CKHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKHttpClient.h; sourceTree = "<group>"; };
 		9916E7C21CE1D865001AAFAF /* CKHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKHttpClient.m; sourceTree = "<group>"; };
 		9916E7C31CE1D865001AAFAF /* IHFMAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMAlertView.swift; sourceTree = "<group>"; };
+		991774ED1CE30270007608D4 /* IHFRisRightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisRightView.swift; sourceTree = "<group>"; };
+		991774EF1CE3133C007608D4 /* IHFRisSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisSearchView.swift; sourceTree = "<group>"; };
 		99236A5E1CE1CABF007B558D /* EgamiCidem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgamiCidem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99236A611CE1CABF007B558D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99236A631CE1CABF007B558D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +118,22 @@
 		99236A811CE1CABF007B558D /* EgamiCidemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgamiCidemUITests.swift; sourceTree = "<group>"; };
 		99236A831CE1CABF007B558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99236AD71CE1CD15007B558D /* EgamiCidem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EgamiCidem-Bridging-Header.h"; sourceTree = "<group>"; };
+		992B034B1CE345E200B72E6D /* IHFRisListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisListView.swift; sourceTree = "<group>"; };
+		992B034E1CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
+		992B034F1CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
+		992B03501CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
+		992B03511CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
+		992B03521CE3478900B72E6D /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
+		992B035A1CE3521C00B72E6D /* ThFootRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThFootRefreshView.swift; sourceTree = "<group>"; };
+		992B035C1CE3521C00B72E6D /* ThHeadArrowRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadArrowRefreshView.swift; sourceTree = "<group>"; };
+		992B035D1CE3521C00B72E6D /* ThHeadBounceRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadBounceRefreshView.swift; sourceTree = "<group>"; };
+		992B035E1CE3521C00B72E6D /* ThHeadRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThHeadRefreshView.swift; sourceTree = "<group>"; };
+		992B035F1CE3521C00B72E6D /* ThRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThRefresh.bundle; sourceTree = "<group>"; };
+		992B03601CE3521C00B72E6D /* ThRefreshBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshBasicView.swift; sourceTree = "<group>"; };
+		992B03611CE3521C00B72E6D /* ThRefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThRefreshConst.swift; sourceTree = "<group>"; };
+		992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
+		992B03641CE3521C00B72E6D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +268,8 @@
 		9916E7AC1CE1D865001AAFAF /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				992B03581CE3521C00B72E6D /* ThPullRefresh */,
+				992B034D1CE3478900B72E6D /* DGElasticPullToRefresh */,
 				9916E7AD1CE1D865001AAFAF /* AFNetworking */,
 				9916E7C31CE1D865001AAFAF /* IHFMAlertView.swift */,
 				9916E7C51CE1D865001AAFAF /* Source */,
@@ -331,6 +369,51 @@
 			path = EgamiCidemUITests;
 			sourceTree = "<group>";
 		};
+		992B034D1CE3478900B72E6D /* DGElasticPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				992B034E1CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift */,
+				992B034F1CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift */,
+				992B03501CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift */,
+				992B03511CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				992B03521CE3478900B72E6D /* DGElasticPullToRefreshView.swift */,
+			);
+			path = DGElasticPullToRefresh;
+			sourceTree = "<group>";
+		};
+		992B03581CE3521C00B72E6D /* ThPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				992B03591CE3521C00B72E6D /* Foot */,
+				992B035B1CE3521C00B72E6D /* Head */,
+				992B035F1CE3521C00B72E6D /* ThRefresh.bundle */,
+				992B03601CE3521C00B72E6D /* ThRefreshBasicView.swift */,
+				992B03611CE3521C00B72E6D /* ThRefreshConst.swift */,
+				992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */,
+				992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */,
+				992B03641CE3521C00B72E6D /* UIView+Extension.swift */,
+			);
+			path = ThPullRefresh;
+			sourceTree = "<group>";
+		};
+		992B03591CE3521C00B72E6D /* Foot */ = {
+			isa = PBXGroup;
+			children = (
+				992B035A1CE3521C00B72E6D /* ThFootRefreshView.swift */,
+			);
+			path = Foot;
+			sourceTree = "<group>";
+		};
+		992B035B1CE3521C00B72E6D /* Head */ = {
+			isa = PBXGroup;
+			children = (
+				992B035C1CE3521C00B72E6D /* ThHeadArrowRefreshView.swift */,
+				992B035D1CE3521C00B72E6D /* ThHeadBounceRefreshView.swift */,
+				992B035E1CE3521C00B72E6D /* ThHeadRefreshView.swift */,
+			);
+			path = Head;
+			sourceTree = "<group>";
+		};
 		99D1BB5E1CE2DB82007A438C /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +425,9 @@
 			isa = PBXGroup;
 			children = (
 				99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */,
+				992B034B1CE345E200B72E6D /* IHFRisListView.swift */,
+				991774ED1CE30270007608D4 /* IHFRisRightView.swift */,
+				991774EF1CE3133C007608D4 /* IHFRisSearchView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -421,6 +507,7 @@
 				TargetAttributes = {
 					99236A5D1CE1CABF007B558D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2AHKDU2ECU;
 					};
 					99236A711CE1CABF007B558D = {
 						CreatedOnToolsVersion = 7.2;
@@ -460,6 +547,7 @@
 				99236A6C1CE1CABF007B558D /* LaunchScreen.storyboard in Resources */,
 				99236A691CE1CABF007B558D /* Assets.xcassets in Resources */,
 				9916E7C61CE1D865001AAFAF /* IHEFEVersion.png in Resources */,
+				992B03691CE3521C00B72E6D /* ThRefresh.bundle in Resources */,
 				9916E7C71CE1D865001AAFAF /* IHEFEVersionPRO.png in Resources */,
 				99236A671CE1CABF007B558D /* Main.storyboard in Resources */,
 			);
@@ -487,14 +575,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				9916E7D01CE1D865001AAFAF /* AFURLSessionManager.m in Sources */,
+				991774F01CE3133C007608D4 /* IHFRisSearchView.swift in Sources */,
 				9916E7CD1CE1D865001AAFAF /* AFURLConnectionOperation.m in Sources */,
 				9916E7D11CE1D865001AAFAF /* CKHttpClient.m in Sources */,
+				992B034C1CE345E200B72E6D /* IHFRisListView.swift in Sources */,
+				992B03671CE3521C00B72E6D /* ThHeadBounceRefreshView.swift in Sources */,
 				9916E7C81CE1D865001AAFAF /* AFHTTPRequestOperation.m in Sources */,
 				9916E7A71CE1D83B001AAFAF /* IHFN_Login.swift in Sources */,
+				992B03561CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				991774EE1CE30270007608D4 /* IHFRisRightView.swift in Sources */,
+				992B03681CE3521C00B72E6D /* ThHeadRefreshView.swift in Sources */,
+				992B03551CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift in Sources */,
+				992B03661CE3521C00B72E6D /* ThHeadArrowRefreshView.swift in Sources */,
+				992B036B1CE3521C00B72E6D /* ThRefreshConst.swift in Sources */,
+				992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */,
 				9916E7C91CE1D865001AAFAF /* AFHTTPRequestOperationManager.m in Sources */,
+				992B03651CE3521C00B72E6D /* ThFootRefreshView.swift in Sources */,
+				992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */,
 				99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */,
 				99236A641CE1CABF007B558D /* ViewController.swift in Sources */,
 				9916E7A41CE1D813001AAFAF /* IHFSupportDefine.swift in Sources */,
+				992B036A1CE3521C00B72E6D /* ThRefreshBasicView.swift in Sources */,
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
@@ -503,9 +604,13 @@
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,
 				9916E7CE1CE1D865001AAFAF /* AFURLRequestSerialization.m in Sources */,
 				9916E7CB1CE1D865001AAFAF /* AFNetworkReachabilityManager.m in Sources */,
+				992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */,
+				992B03531CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift in Sources */,
 				9916E7CF1CE1D865001AAFAF /* AFURLResponseSerialization.m in Sources */,
 				9916E7A11CE1D7EB001AAFAF /* IHFMAccountModel.swift in Sources */,
 				9916E7D21CE1D865001AAFAF /* IHFMAlertView.swift in Sources */,
+				992B03571CE3478900B72E6D /* DGElasticPullToRefreshView.swift in Sources */,
+				992B03541CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -663,6 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
