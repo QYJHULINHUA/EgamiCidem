@@ -54,6 +54,7 @@
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */; };
+		99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMantleHTL.swift; sourceTree = "<group>"; };
+		99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFPatientListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +434,7 @@
 			children = (
 				99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */,
 				992B034B1CE345E200B72E6D /* IHFRisListView.swift */,
+				99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */,
 				991774ED1CE30270007608D4 /* IHFRisRightView.swift */,
 				991774EF1CE3133C007608D4 /* IHFRisSearchView.swift */,
 			);
@@ -615,6 +618,7 @@
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
 				99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */,
+				99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */,
 				9916E79B1CE1D7C4001AAFAF /* IHFLoginView.swift in Sources */,
 				9916E7CC1CE1D865001AAFAF /* AFSecurityPolicy.m in Sources */,
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,

@@ -26,10 +26,11 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
         tableView = UITableView(frame: self.bounds, style: .Plain)
         tableView.delegate = self;
         tableView.dataSource = self
+        tableView.rowHeight = 70;
 
         tableView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        tableView.separatorColor = UIColor(red: 230/255.0, green: 230/255.0, blue: 231/255.0, alpha: 1.0)
-        tableView.backgroundColor = UIColor(red: 250/255.0, green: 250/255.0, blue: 251/255.0, alpha: 1.0)
+        tableView.separatorColor = UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 1.0)
+        tableView.backgroundColor = UIColor.blackColor()
         self.addSubview(tableView)
         
 //        tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.blueColor(), action: #selector(IHFRisListView.headRefresh))
@@ -113,9 +114,6 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-
-
-    
     /**_____________________________________________________________________*/
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -123,25 +121,35 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-
         return studyListArr.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "cellIdentifier"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
         
+        let requseIdetify = "ihfPatientListTableCell"
+        var cell: IHFPatientListCell? = tableView.dequeueReusableCellWithIdentifier(requseIdetify) as? IHFPatientListCell
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: cellIdentifier)
-            cell!.contentView.backgroundColor = UIColor(red: 250/255.0, green: 250/255.0, blue: 251/255.0, alpha: 1.0)
+            cell = IHFPatientListCell.init(style: .Default, reuseIdentifier: requseIdetify)
         }
         
-        if let cell = cell {
-            cell.textLabel?.text = "\(indexPath.row)"
-            return cell
+        var dic = [:]
+        if indexPath.row < studyListArr.count - 1  {
+            let modelDic = studyListArr[indexPath.row];
+            if modelDic.isKindOfClass(NSDictionary) {
+                dic = modelDic as! NSDictionary;
+            }
         }
+        let model = IHFPatientListDataModel()
+        model.getModelFromDctionary(dic)
         
-        return UITableViewCell()
+        cell!.patient_Name.text = model.name;
+        cell!.patient_ID.text = model.patientid;
+        cell!.patient_checkDate.text = model.regdate;
+        cell!.patient_modality.text = model.modality;
+        cell!.patient_seriesInfo.text = model.patient_seriesInfo;
+        cell!.patient_barthDate.text = model.birthdate;
+    
+        return cell!
     }
     
 
@@ -153,4 +161,20 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
     }
     */
 
+}
+
+
+class IHFPatientListDataModel: IHFMantleHTL {
+    
+    var name = ""
+    var patientid = ""
+    var regdate = ""
+    var modality = ""
+    var patient_seriesInfo = ""
+    var birthdate = ""
+    
+    required override init() {
+        super.init();
+        property = ["name":"","patientid":"","regdate":"","modality":"","patient_seriesInfo":"","birthdate":""]
+    }
 }

@@ -38,7 +38,6 @@ class IHFN_Ris: NSObject {
                 if model.status == 1
                 {
                     responseddd(statusCode: 1, response:model)
-                    print(model.data)
                 }else
                 {
                     responseddd(statusCode: 0, response:model.msg)

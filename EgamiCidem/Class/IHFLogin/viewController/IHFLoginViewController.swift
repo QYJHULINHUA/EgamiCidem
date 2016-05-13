@@ -9,8 +9,6 @@
 import UIKit
 
 class IHFLoginViewController: UIViewController,IHFLoginViewDelegate {
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +16,9 @@ class IHFLoginViewController: UIViewController,IHFLoginViewDelegate {
         let logView = IHFLoginView.init(frame: self.view.bounds)
         logView.delegate = self;
         self.view.addSubview(logView)
-        
-        
         // Do any additional setup after loading the view.
     }
+
     
     func jumpIntoNestViewController() {
         

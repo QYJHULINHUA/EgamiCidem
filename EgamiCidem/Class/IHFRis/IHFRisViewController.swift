@@ -47,7 +47,7 @@ class IHFRisViewController: UIViewController {
         
         Sidebar.addGestureRecognizer(swipeGesture)
         sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width, 0), size:sideViewSize);
-        sideView.backgroundColor = UIColor.yellowColor()
+        sideView.backgroundColor = UIColor.init(red: 10/255.0, green: 10/255.0, blue: 10/255.0, alpha: 1)
         self.view.addSubview(sideView)
         
         // Do any additional setup after loading the view.

@@ -68,7 +68,7 @@ class IHFRisLeftTopBar: UIView {
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.blackColor()
+        self.backgroundColor = UIColor.init(red: 40/255.0, green: 40/255.0, blue: 40/255.0, alpha: 1)
         
         leftBtn.frame = CGRectMake(20, 10, 40, 40);
         leftBtn.setImage(UIImage.init(named: "IHFMsearch"), forState: UIControlState.Normal)
