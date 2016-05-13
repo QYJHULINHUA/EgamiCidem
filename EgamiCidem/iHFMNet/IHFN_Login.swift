@@ -12,10 +12,6 @@ import Foundation
 
 class IHFN_Login: NSObject {
     
-    
-    let risUrl = "/phillips/ihefeMedImgRIS/index.php?m=Api&c=Ris"
-    
-    
     func loginAccount(accoutID st1:String, password str2:String, callback responseddd:IHFNet_CallBack)
     {
 

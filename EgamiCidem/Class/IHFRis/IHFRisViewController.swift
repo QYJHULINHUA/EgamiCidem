@@ -53,6 +53,10 @@ class IHFRisViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        leftV!.risTableView.loadDataForStudyList();
+    }
+    
 
     
     func swipeSideBar(swipe:UIPanGestureRecognizer)

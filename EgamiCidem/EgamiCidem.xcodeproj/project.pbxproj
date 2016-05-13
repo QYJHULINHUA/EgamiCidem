@@ -51,7 +51,9 @@
 		992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */; };
 		992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */; };
 		992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03641CE3521C00B72E6D /* UIView+Extension.swift */; };
+		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
+		99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +136,9 @@
 		992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
 		992B03641CE3521C00B72E6D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
+		99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMantleHTL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				9916E7A61CE1D83B001AAFAF /* IHFN_Login.swift */,
+				997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */,
 			);
 			path = iHFMNet;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 		9916E7AC1CE1D865001AAFAF /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				99E6B45E1CE5896700EF0077 /* IHFMantle */,
 				992B03581CE3521C00B72E6D /* ThPullRefresh */,
 				992B034D1CE3478900B72E6D /* DGElasticPullToRefresh */,
 				9916E7AD1CE1D865001AAFAF /* AFNetworking */,
@@ -439,6 +445,14 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		99E6B45E1CE5896700EF0077 /* IHFMantle */ = {
+			isa = PBXGroup;
+			children = (
+				99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */,
+			);
+			path = IHFMantle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -591,6 +605,7 @@
 				992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */,
 				9916E7C91CE1D865001AAFAF /* AFHTTPRequestOperationManager.m in Sources */,
 				992B03651CE3521C00B72E6D /* ThFootRefreshView.swift in Sources */,
+				997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */,
 				992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */,
 				99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */,
 				99236A641CE1CABF007B558D /* ViewController.swift in Sources */,
@@ -599,6 +614,7 @@
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
+				99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */,
 				9916E79B1CE1D7C4001AAFAF /* IHFLoginView.swift in Sources */,
 				9916E7CC1CE1D865001AAFAF /* AFSecurityPolicy.m in Sources */,
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,
