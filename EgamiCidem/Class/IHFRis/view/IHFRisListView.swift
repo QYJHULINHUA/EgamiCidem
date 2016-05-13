@@ -31,7 +31,7 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
         tableView.addBounceHeadRefresh(self,bgColor:UIColor.orangeColor(),loadingColor:UIColor.blueColor(), action: #selector(IHFRisListView.headRefresh))
         
 //        tableView.addFootRefresh(self, action: #selector(IHFRisListView.footRefresh));
-//        tableView.addHeadRefresh(self, action: #selector(IHFRisListView.headRefresh));
+        tableView.addHeadRefresh(self, action: #selector(IHFRisListView.headRefresh));
         
         
         
