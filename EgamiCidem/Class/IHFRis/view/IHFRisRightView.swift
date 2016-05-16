@@ -11,8 +11,10 @@ import UIKit
 class IHFRisRightView: UIView {
     
     weak var fatherVC :IHFRisViewController?
-    var topBar: IHFRisRightTopBar?
-    var reportView: IHFRisReportView?
+    var topBar: IHFRisRightTopBar!
+    var reportView: IHFRisReportView!
+    var seriesListView: IHFRisSeriesListView!
+    
     let R_width = 0.67 * screen_width
     
     required override init(frame: CGRect) {
@@ -30,6 +32,9 @@ class IHFRisRightView: UIView {
         let xilieTitle = IHFRisRightTitleBar.init(frame: CGRectMake(0, 205, R_width, 35))
         self.addSubview(xilieTitle)
         xilieTitle.centerLabel.text = "系列"
+        
+        seriesListView = IHFRisSeriesListView.init(frame: CGRectMake(0, 240.0, R_width, screen_height - 240.0))
+        self.addSubview(seriesListView)
         
     }
     

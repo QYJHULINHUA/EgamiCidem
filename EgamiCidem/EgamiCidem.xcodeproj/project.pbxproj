@@ -55,6 +55,7 @@
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */; };
 		99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F82F181CE6232C00B4A45F /* IHFRisReportView.swift */; };
+		99F82F1F1CE953B900B4A45F /* IHFRisSeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F82F1E1CE953B900B4A45F /* IHFRisSeriesListView.swift */; };
 		99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMantleHTL.swift; sourceTree = "<group>"; };
 		99F82F181CE6232C00B4A45F /* IHFRisReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisReportView.swift; sourceTree = "<group>"; };
+		99F82F1E1CE953B900B4A45F /* IHFRisSeriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisSeriesListView.swift; sourceTree = "<group>"; };
 		99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFPatientListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -439,6 +441,7 @@
 				99FE942B1CE5C34E00357992 /* IHFPatientListCell.swift */,
 				991774ED1CE30270007608D4 /* IHFRisRightView.swift */,
 				99F82F181CE6232C00B4A45F /* IHFRisReportView.swift */,
+				99F82F1E1CE953B900B4A45F /* IHFRisSeriesListView.swift */,
 				991774EF1CE3133C007608D4 /* IHFRisSearchView.swift */,
 			);
 			path = view;
@@ -626,6 +629,7 @@
 				9916E7CC1CE1D865001AAFAF /* AFSecurityPolicy.m in Sources */,
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,
 				9916E7CE1CE1D865001AAFAF /* AFURLRequestSerialization.m in Sources */,
+				99F82F1F1CE953B900B4A45F /* IHFRisSeriesListView.swift in Sources */,
 				99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */,
 				9916E7CB1CE1D865001AAFAF /* AFNetworkReachabilityManager.m in Sources */,
 				992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */,

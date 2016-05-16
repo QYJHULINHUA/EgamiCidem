@@ -77,7 +77,7 @@ class IHFRisLeftTopBar: UIView {
         centerLabel.textColor = UIColor.whiteColor();
         centerLabel.textAlignment = NSTextAlignment.Center;
         rightBtn.frame = CGRectMake(frame.size.width - 50, 10, 40, 40);
-        rightBtn.setImage(UIImage.init(named: "IHFMsearch"), forState: UIControlState.Normal)
+        rightBtn.setImage(UIImage.init(named: "IHFList"), forState: UIControlState.Normal)
         self.addSubview(leftBtn)
         self.addSubview(centerLabel)
         self.addSubview(rightBtn)
