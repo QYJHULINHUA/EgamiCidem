@@ -9,34 +9,32 @@
 import UIKit
 
 class IHFRisReportView: UIView {
-
+ 
     var doctor :UILabel!
     var part :UILabel!
     var reportStatus :UILabel!
     var modity :UILabel!
-    
+    weak var study_Info:IHFRisStudyModel?
     
     var hospitalsName:String
     {
         get{
-            return self.hospitalsName
+            return doctor.text!
         }
         set(newString)
         {
             doctor.text = "医院  " + newString
-            self.hospitalsName = newString
         }
     }
     
     var partName:String
     {
         get{
-            return self.hospitalsName
+            return part.text!
         }
         set(newString)
         {
-            part.text = "部位" + newString
-            self.partName = newString
+            part.text = "部位  " + newString
         }
     }
     
@@ -70,6 +68,15 @@ class IHFRisReportView: UIView {
         modity.textColor = UIColor.init(white: 1, alpha: 0.8)
         self.addSubview(modity)
         
+        
+    }
+    
+    func setStudyInfo(info: IHFRisStudyModel){
+        
+        self.study_Info = info;
+        self.hospitalsName = info.reqhospital;
+        self.partName = info.exambodypart;
+        self.modity.text = info.modality;
         
     }
     

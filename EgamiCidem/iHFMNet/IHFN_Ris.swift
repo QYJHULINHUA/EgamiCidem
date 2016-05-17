@@ -11,10 +11,13 @@ import UIKit
 class IHFN_Ris: NSObject {
 
     var op : AFHTTPRequestOperation?
+    var seriesOP : AFHTTPRequestOperation?
+    
     let searchModel = SearchDicModel()
     var pageNum = 1
     var pagesize = 15
     
+    // 请求study列表
     func getStudyList(param pa:NSDictionary, callback responseddd:IHFNet_CallBack)
     {
         if op != nil {
@@ -56,6 +59,34 @@ class IHFN_Ris: NSObject {
         
         op!.start();
         
+    }
+    
+    // 请求序列列表
+    func getSeriesList(stu_id stuid:String,relatetopacs relate:String ,callback responseddd:IHFNet_CallBack){
+        
+        let url = BaseURL + risUrl + "&action=1003&stu_id=\(stuid)&relatetopacs=\(relate)"
+        
+        if seriesOP != nil {
+            if seriesOP!.executing == true
+            {
+                print(1)
+                seriesOP!.cancel();
+            }
+        }
+        
+        let manager = AFHTTPRequestOperationManager();
+        manager.responseSerializer.acceptableContentTypes = NSSet.init(array: ["application/xml","text/html"]) as Set<NSObject>
+        
+        seriesOP = manager.GET(url, parameters: nil, success: { (Operation: AFHTTPRequestOperation!, response:AnyObject!) in
+            
+//                print(response);
+            
+            }, failure: { (Operation: AFHTTPRequestOperation!, error: NSError!) in
+            
+//                print(error);
+        })
+        
+        seriesOP!.start();
     }
     
     

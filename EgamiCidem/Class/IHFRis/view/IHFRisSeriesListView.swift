@@ -11,6 +11,7 @@ import UIKit
 class IHFRisSeriesListView: UIView , UITableViewDataSource,UITableViewDelegate {
     
     var tableView: UITableView!
+    weak var study_Info:IHFRisStudyModel?
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,6 +53,15 @@ class IHFRisSeriesListView: UIView , UITableViewDataSource,UITableViewDelegate {
         return cell!
     }
     
+    
+    func setStudyInfo(info: IHFRisStudyModel){
+        self.study_Info = info;
+        let net = IHFN_Ris()
+        net.getSeriesList(stu_id: info.stu_id, relatetopacs: info.relatetopacs) { (statusCode, response) in
+            
+        }
+        
+    }
 
     
     /*

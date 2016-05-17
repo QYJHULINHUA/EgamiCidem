@@ -52,6 +52,7 @@
 		992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */; };
 		992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03641CE3521C00B72E6D /* UIView+Extension.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
+		99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */; };
 		99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F82F181CE6232C00B4A45F /* IHFRisReportView.swift */; };
@@ -140,6 +141,7 @@
 		992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
 		992B03641CE3521C00B72E6D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
+		99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisModelCollection.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99E6B45F1CE5898500EF0077 /* IHFMantleHTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMantleHTL.swift; sourceTree = "<group>"; };
 		99F82F181CE6232C00B4A45F /* IHFRisReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisReportView.swift; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 		99D1BB5E1CE2DB82007A438C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				9916E7A41CE1D813001AAFAF /* IHFSupportDefine.swift in Sources */,
 				992B036A1CE3521C00B72E6D /* ThRefreshBasicView.swift in Sources */,
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,
+				99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
 				99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */,

@@ -8,16 +8,16 @@
 
 import UIKit
 
-class IHFRisViewController: UIViewController {
+class IHFRisViewController: UIViewController,IHFRisListViewDelegate {
 
     var leftV : IHFRisLeftView? = nil
     let rightV = IHFRisRightView()
     let Sidebar = UIView()
     var swipeGesture:UIPanGestureRecognizer!
     var tapGesture:UITapGestureRecognizer!
+    var studyModel = IHFRisStudyModel()
     
     let sideView = UIView()
-    
     let sideViewSize = CGSizeMake(0.33 * screen_width, screen_height)
     
     
@@ -29,6 +29,7 @@ class IHFRisViewController: UIViewController {
         let leftVRect = CGRectMake(0, 0, 0.33 * screen_width, screen_height);
         leftV = IHFRisLeftView().initWithFatherVC(fatherVC :self ,frame :leftVRect);
         self.view.addSubview(leftV!);
+        leftV!.risTableView.delegate = self;
         
         rightV.frame = CGRectMake(0.33 * screen_width, 0, 0.67 * screen_width, screen_height)
         rightV.fatherVC = self
@@ -109,6 +110,12 @@ class IHFRisViewController: UIViewController {
         UIView.animateWithDuration(0.3) {
             self.sideView.frame = CGRect(origin:CGPointMake(-0.33 * screen_width, 0), size:self.sideViewSize);
         };
+    }
+    
+    func selectPatientStudy(studyInfo info: NSDictionary) {
+        studyModel.getModelFromDctionary(info)
+        rightV.reportView.setStudyInfo(studyModel)
+        rightV.seriesListView.setStudyInfo(studyModel)
     }
     
     

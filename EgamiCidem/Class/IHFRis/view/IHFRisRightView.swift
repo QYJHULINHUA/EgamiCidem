@@ -36,7 +36,22 @@ class IHFRisRightView: UIView {
         seriesListView = IHFRisSeriesListView.init(frame: CGRectMake(0, 240.0, R_width, screen_height - 240.0))
         self.addSubview(seriesListView)
         
+        let tapGesture = UITapGestureRecognizer(target: self,action: #selector(IHFRisRightView.touchReportView));
+        reportView.addGestureRecognizer(tapGesture)
+        
     }
+    
+    /*!
+     点击报告
+     */
+    func touchReportView() {
+        if fatherVC != nil {
+            print("爹爹点击了报告")
+        }
+    }
+    
+    
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -118,8 +118,10 @@ class IHFLoginView: UIView {
     
     func successJumpIntoRisViewControoler()
     {
-        let canDo :Bool = delegate!.respondsToSelector(Selector("jumpIntoNestViewController"));
-        
+        var canDo = false;
+        if delegate != nil {
+            canDo = delegate!.respondsToSelector(#selector(IHFLoginViewController.jumpIntoNestViewController));
+        }
         if(canDo){
             delegate?.jumpIntoNestViewController()
         }else{

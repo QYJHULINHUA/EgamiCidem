@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol IHFRisListViewDelegate:NSObjectProtocol {
+    
+    func selectPatientStudy(studyInfo info: NSDictionary)
+}
+
 class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
     
     private var tableView: UITableView!
-    weak var delegate:UITableViewDelegate? //代理
     var studyListArr = [];
     let risNet = IHFN_Ris()
+    
+    weak var delegate:IHFRisListViewDelegate?
     
     
     
@@ -150,6 +156,27 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
         cell!.patient_barthDate.text = model.birthdate;
     
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let idx = indexPath.row;
+        if idx < studyListArr.count {
+            let a = studyListArr[idx]
+            if a.isKindOfClass(NSDictionary)
+            {
+                if delegate != nil {
+                    let canDo:Bool = delegate!.respondsToSelector(#selector(IHFRisViewController.selectPatientStudy(studyInfo:)))
+                    if canDo {
+                        delegate!.selectPatientStudy(studyInfo: a as! NSDictionary)
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
     }
     
 
