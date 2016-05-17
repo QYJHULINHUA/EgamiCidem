@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IHFRisViewController: UIViewController,IHFRisListViewDelegate {
+class IHFRisViewController: UIViewController,IHFRisListViewDelegate,IHFRisSeriesListViewDelegate {
 
     var leftV : IHFRisLeftView? = nil
     let rightV = IHFRisRightView()
@@ -35,6 +35,7 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate {
         rightV.fatherVC = self
         self.view.addSubview(rightV)
         rightV.backgroundColor = UIColor.blackColor()
+        rightV.seriesListView.delegate = self;
         
         
         Sidebar.frame = CGRectMake(0, 0, 3.0, screen_height)
@@ -116,6 +117,11 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate {
         studyModel.getModelFromDctionary(info)
         rightV.reportView.setStudyInfo(studyModel)
         rightV.seriesListView.setStudyInfo(studyModel)
+    }
+    
+    func selectPatientSerires(seriresInfo info: NSDictionary) {
+        let model = IHFRis_SeriresDataModel()
+        model.getModelFromDctionary(info)
     }
     
     

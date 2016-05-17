@@ -139,7 +139,7 @@ class IHFRisListView: UIView ,UITableViewDataSource,UITableViewDelegate {
         }
         
         var dic = [:]
-        if indexPath.row < studyListArr.count - 1  {
+        if indexPath.row < studyListArr.count  {
             let modelDic = studyListArr[indexPath.row];
             if modelDic.isKindOfClass(NSDictionary) {
                 dic = modelDic as! NSDictionary;

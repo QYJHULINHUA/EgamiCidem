@@ -34,3 +34,19 @@ class IHFRisStudyModel: IHFMantleHTL {
         property = ["birthdate":"","exambodypart":"","modality":"","name":"","patientid":"","py":"","regdate":"","regtime":"","reporterid":"","reqdept":"","reqhospital":"","sex":"","studyage":"","studyid":"","studystatus":"","updatetime":"","relatetopacs":"","stu_id":""]
     }
 }
+
+class IHFRis_SeriresDataModel: IHFMantleHTL {
+    var dcm = []
+    var icon = ""
+    var imagepath = ""
+    var seriesinstanceuid = ""
+    var updatetime = ""
+    
+    
+    required override init() {
+        super.init();
+        property = ["dcm":[],"icon":"","imagepath":"","seriesinstanceuid":"","updatetime":""]
+    }
+    
+}
+

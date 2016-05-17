@@ -35,22 +35,7 @@ class IHFN_Ris: NSObject {
         op = manager.GET(url, parameters: nil, success: { (Operation: AFHTTPRequestOperation!, response:AnyObject!) in
         
             let model = RisCallBackModel()
-            if response.isKindOfClass(NSDictionary)
-            {
-                model.getModelFromDctionary(response as! NSDictionary)
-                if model.status == 1
-                {
-                    responseddd(statusCode: 1, response:model)
-                }else
-                {
-                    responseddd(statusCode: 0, response:model.msg)
-                }
-                
-                
-            }else
-            {
-                responseddd(statusCode: 0, response:"errorCode:-101") // 网络回调数据类型异常
-            }
+            IHFN_Ris.handleRisNetSuccessCallBack(model: model, response: response, callback: responseddd)
             
             }, failure: { (Operation: AFHTTPRequestOperation!, error: NSError!) in
                 responseddd(statusCode: 0, response:error.localizedDescription)
@@ -64,33 +49,57 @@ class IHFN_Ris: NSObject {
     // 请求序列列表
     func getSeriesList(stu_id stuid:String,relatetopacs relate:String ,callback responseddd:IHFNet_CallBack){
         
-        let url = BaseURL + risUrl + "&action=1003&stu_id=\(stuid)&relatetopacs=\(relate)"
+        let url = BaseURL + risUrl + "&action=1011&stu_id=\(stuid)&relatetopacs=\(relate)"
         
         if seriesOP != nil {
             if seriesOP!.executing == true
             {
-                print(1)
+
                 seriesOP!.cancel();
             }
         }
+        
         
         let manager = AFHTTPRequestOperationManager();
         manager.responseSerializer.acceptableContentTypes = NSSet.init(array: ["application/xml","text/html"]) as Set<NSObject>
         
         seriesOP = manager.GET(url, parameters: nil, success: { (Operation: AFHTTPRequestOperation!, response:AnyObject!) in
-            
-//                print(response);
+            let model = RisCallBackModel()
+            IHFN_Ris.handleRisNetSuccessCallBack(model: model, response: response, callback: responseddd)
             
             }, failure: { (Operation: AFHTTPRequestOperation!, error: NSError!) in
             
-//                print(error);
+            responseddd(statusCode: 0, response:error.localizedDescription)
         })
         
         seriesOP!.start();
     }
     
+    // 处理study，serire列表网络成功回调
+    class func handleRisNetSuccessCallBack(model model:RisCallBackModel,response:AnyObject,callback responseddd:IHFNet_CallBack) {
+        
+        if response.isKindOfClass(NSDictionary)
+        {
+            model.getModelFromDctionary(response as! NSDictionary)
+            if model.status == 1
+            {
+                responseddd(statusCode: 1, response:model)
+            }else
+            {
+                responseddd(statusCode: 0, response:model.msg)
+            }
+            
+            
+        }else
+        {
+            responseddd(statusCode: 0, response:"errorCode:-101") // 网络回调数据类型异常
+        }
+    }
+    
     
 }
+
+
 
 class SearchDicModel: IHFMantleHTL {
     var day = ""
