@@ -55,12 +55,7 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate,IHFRisSeries
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        leftV!.risTableView.loadDataForStudyList();
-    }
-    
 
-    
     func swipeSideBar(swipe:UIPanGestureRecognizer)
     {
         Sidebar.alpha = 0.8;

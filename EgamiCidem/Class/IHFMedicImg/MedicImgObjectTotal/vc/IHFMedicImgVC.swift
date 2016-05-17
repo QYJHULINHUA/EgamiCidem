@@ -19,9 +19,22 @@ enum IHFMedicImgVCType {
 class IHFMedicImgVC: UIViewController {
 
     var vc_type = IHFMedicImgVCType.IHFMIVC_2D // Default
-    let leftbar = IHFM_VC_LeftToolBar()
+    var leftbar: IHFM_VC_LeftToolBar?
     let rightBar = IHFM_VC_RightToolBar()
     let mainView = UIView()
+    
+    /// 退出控制器
+    func medicImgVC_Esc() {
+        
+    }
+    
+    /// 四角信息控制显示隐藏
+    func fourInfoBtnIsShow(btn:UIButton) {
+        btn.selected = !btn.selected
+        print(btn.selected)
+    }
+    
+    
     
     private let bar_Width = screen_height * 0.07;
     
@@ -29,9 +42,10 @@ class IHFMedicImgVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor()
         
-        leftbar.frame = CGRectMake(0, 0, bar_Width, screen_height)
-        self.view.addSubview(leftbar)
-        leftbar.escBtn.addTarget(self, action: #selector(IHFMedicImgVC.medicImgVC_Esc), forControlEvents: .TouchUpInside)
+        leftbar = IHFM_VC_LeftToolBar.init(frame: CGRectMake(0, 0, bar_Width, screen_height))
+        self.view.addSubview(leftbar!)
+        leftbar!.escBtn.addTarget(self, action: #selector(IHFMedicImgVC.medicImgVC_Esc), forControlEvents: .TouchUpInside)
+        leftbar!.fourInfoBtn.addTarget(self, action: #selector(IHFMedicImgVC.fourInfoBtnIsShow(_:)), forControlEvents: .TouchUpInside)
         
         rightBar.frame = CGRectMake(screen_width - bar_Width, 0, bar_Width, screen_height)
         self.view.addSubview(rightBar)
@@ -40,30 +54,10 @@ class IHFMedicImgVC: UIViewController {
         self.view.addSubview(mainView)
         mainView.backgroundColor = UIColor.blackColor()
         
-        switch vc_type {
-        case .IHFMIVC_2D:
-            print("IHFMIVC_2D")
-            
-        case .IHFMIVC_3D:
-            print("IHFMIVC_3D")
-            
-        case .IHFMIVC_MPR:
-            print("IHFMIVC_MPR")
-            
-        case .IHFMIVC_MPRT:
-            print("IHFMIVC_MPRT")
-            
-        case .IHFMIVC_Feature:
-            print("IHFMIVC_Feature")
-            
-        }
-
         // Do any additional setup after loading the view.
     }
     
-    func medicImgVC_Esc() {
-        
-    }
+    
     
     override func prefersStatusBarHidden() -> Bool {
         return true

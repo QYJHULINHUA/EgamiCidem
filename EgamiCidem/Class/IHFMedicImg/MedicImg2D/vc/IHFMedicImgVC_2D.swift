@@ -17,12 +17,18 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
         self.vc_type = IHFMedicImgVCType.IHFMIVC_2D
         super.viewDidLoad()
         
-
         // Do any additional setup after loading the view.
     }
     
+
+    /// 退出控制器
     override func medicImgVC_Esc() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    /// 四角信息控制显示隐藏
+    override func fourInfoBtnIsShow(btn:UIButton) {
+        btn.selected = !btn.selected
     }
 
     override func didReceiveMemoryWarning() {
