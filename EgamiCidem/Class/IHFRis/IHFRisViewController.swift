@@ -113,6 +113,7 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate,IHFRisSeries
         };
     }
     
+    
     func selectPatientStudy(studyInfo info: NSDictionary) {
         studyModel.getModelFromDctionary(info)
         rightV.reportView.setStudyInfo(studyModel)
@@ -122,6 +123,12 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate,IHFRisSeries
     func selectPatientSerires(seriresInfo info: NSDictionary) {
         let model = IHFRis_SeriresDataModel()
         model.getModelFromDctionary(info)
+        
+        let medicImg2DVC = IHFMedicImgVC_2D()
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.presentViewController(medicImg2DVC, animated: true, completion: nil)
+        }
     }
     
     
@@ -135,15 +142,4 @@ class IHFRisViewController: UIViewController,IHFRisListViewDelegate,IHFRisSeries
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

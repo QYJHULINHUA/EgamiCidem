@@ -51,6 +51,10 @@
 		992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */; };
 		992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */; };
 		992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B03641CE3521C00B72E6D /* UIView+Extension.swift */; };
+		9930903A1CEB000D00B0AA87 /* IHFMedicImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090391CEB000D00B0AA87 /* IHFMedicImgVC.swift */; };
+		9930903C1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930903B1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift */; };
+		993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */; };
+		993090431CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
@@ -143,6 +147,10 @@
 		992B03621CE3521C00B72E6D /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		992B03631CE3521C00B72E6D /* UIScrollView+ThRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ThRefresh.swift"; sourceTree = "<group>"; };
 		992B03641CE3521C00B72E6D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		993090391CEB000D00B0AA87 /* IHFMedicImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImgVC.swift; sourceTree = "<group>"; };
+		9930903B1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFM_VC_LeftToolBar.swift; sourceTree = "<group>"; };
+		993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImgVC_2D.swift; sourceTree = "<group>"; };
+		993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFM_VC_RightToolBar.swift; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisModelCollection.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 		9916E7921CE1D7C4001AAFAF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9930902F1CEAFE4000B0AA87 /* IHFMedicImg */,
 				9916E7931CE1D7C4001AAFAF /* IHFLogin */,
 				9916E7991CE1D7C4001AAFAF /* IHFRis */,
 			);
@@ -437,6 +446,113 @@
 			path = Head;
 			sourceTree = "<group>";
 		};
+		9930902F1CEAFE4000B0AA87 /* IHFMedicImg */ = {
+			isa = PBXGroup;
+			children = (
+				993090351CEAFFB500B0AA87 /* MedicImgObjectTotal */,
+				993090301CEAFE4000B0AA87 /* MedicImg2D */,
+				993090311CEAFE4000B0AA87 /* MedicImg3D */,
+				993090321CEAFE4000B0AA87 /* MedicImgFeature */,
+				993090331CEAFE4000B0AA87 /* MedicImgMPR */,
+				993090341CEAFE4000B0AA87 /* MedicImgMPRT */,
+			);
+			path = IHFMedicImg;
+			sourceTree = "<group>";
+		};
+		993090301CEAFE4000B0AA87 /* MedicImg2D */ = {
+			isa = PBXGroup;
+			children = (
+				9930903D1CEB01EB00B0AA87 /* model */,
+				9930903E1CEB01EB00B0AA87 /* vc */,
+				9930903F1CEB01EB00B0AA87 /* view */,
+			);
+			path = MedicImg2D;
+			sourceTree = "<group>";
+		};
+		993090311CEAFE4000B0AA87 /* MedicImg3D */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MedicImg3D;
+			sourceTree = "<group>";
+		};
+		993090321CEAFE4000B0AA87 /* MedicImgFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MedicImgFeature;
+			sourceTree = "<group>";
+		};
+		993090331CEAFE4000B0AA87 /* MedicImgMPR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MedicImgMPR;
+			sourceTree = "<group>";
+		};
+		993090341CEAFE4000B0AA87 /* MedicImgMPRT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MedicImgMPRT;
+			sourceTree = "<group>";
+		};
+		993090351CEAFFB500B0AA87 /* MedicImgObjectTotal */ = {
+			isa = PBXGroup;
+			children = (
+				993090361CEAFFD100B0AA87 /* model */,
+				993090371CEAFFD100B0AA87 /* vc */,
+				993090381CEAFFD100B0AA87 /* view */,
+			);
+			path = MedicImgObjectTotal;
+			sourceTree = "<group>";
+		};
+		993090361CEAFFD100B0AA87 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		993090371CEAFFD100B0AA87 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				993090391CEB000D00B0AA87 /* IHFMedicImgVC.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		993090381CEAFFD100B0AA87 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9930903B1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift */,
+				993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9930903D1CEB01EB00B0AA87 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9930903E1CEB01EB00B0AA87 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		9930903F1CEB01EB00B0AA87 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		99D1BB5E1CE2DB82007A438C /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,7 +740,10 @@
 			files = (
 				9916E7D01CE1D865001AAFAF /* AFURLSessionManager.m in Sources */,
 				991774F01CE3133C007608D4 /* IHFRisSearchView.swift in Sources */,
+				9930903C1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift in Sources */,
 				9916E7CD1CE1D865001AAFAF /* AFURLConnectionOperation.m in Sources */,
+				9930903A1CEB000D00B0AA87 /* IHFMedicImgVC.swift in Sources */,
+				993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */,
 				9916E7D11CE1D865001AAFAF /* CKHttpClient.m in Sources */,
 				992B034C1CE345E200B72E6D /* IHFRisListView.swift in Sources */,
 				992B03671CE3521C00B72E6D /* ThHeadBounceRefreshView.swift in Sources */,
@@ -642,6 +761,7 @@
 				992B03651CE3521C00B72E6D /* ThFootRefreshView.swift in Sources */,
 				997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */,
 				992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */,
+				993090431CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift in Sources */,
 				99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */,
 				99236A641CE1CABF007B558D /* ViewController.swift in Sources */,
 				9916E7A41CE1D813001AAFAF /* IHFSupportDefine.swift in Sources */,
