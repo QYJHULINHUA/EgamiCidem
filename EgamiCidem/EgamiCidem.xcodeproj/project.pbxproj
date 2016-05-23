@@ -55,6 +55,8 @@
 		9930903C1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930903B1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift */; };
 		993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */; };
 		993090431CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */; };
+		993090451CEBF7A000B0AA87 /* IHFMD_MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */; };
+		9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
@@ -151,6 +153,8 @@
 		9930903B1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFM_VC_LeftToolBar.swift; sourceTree = "<group>"; };
 		993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImgVC_2D.swift; sourceTree = "<group>"; };
 		993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFM_VC_RightToolBar.swift; sourceTree = "<group>"; };
+		993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView.swift; sourceTree = "<group>"; };
+		9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_2D_BaseView.swift; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisModelCollection.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
@@ -549,6 +553,8 @@
 		9930903F1CEB01EB00B0AA87 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */,
+				9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -770,12 +776,14 @@
 				99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
+				993090451CEBF7A000B0AA87 /* IHFMD_MainView.swift in Sources */,
 				99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */,
 				99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */,
 				9916E79B1CE1D7C4001AAFAF /* IHFLoginView.swift in Sources */,
 				9916E7CC1CE1D865001AAFAF /* AFSecurityPolicy.m in Sources */,
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,
 				9916E7CE1CE1D865001AAFAF /* AFURLRequestSerialization.m in Sources */,
+				9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */,
 				99F82F1F1CE953B900B4A45F /* IHFRisSeriesListView.swift in Sources */,
 				99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */,
 				9916E7CB1CE1D865001AAFAF /* AFNetworkReachabilityManager.m in Sources */,

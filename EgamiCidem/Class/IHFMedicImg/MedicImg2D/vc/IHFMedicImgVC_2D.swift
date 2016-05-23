@@ -10,12 +10,17 @@ import UIKit
 
 class IHFMedicImgVC_2D: IHFMedicImgVC {
 
+    var mainView_2D  : IHFMD_MainView! = nil
     
     
     override func viewDidLoad() {
        
         self.vc_type = IHFMedicImgVCType.IHFMIVC_2D
         super.viewDidLoad()
+        
+        mainView_2D = IHFMD_MainView()
+        mainView_2D.frame = self.mainView.bounds;
+        self.mainView.addSubview(mainView_2D)
         
         // Do any additional setup after loading the view.
     }

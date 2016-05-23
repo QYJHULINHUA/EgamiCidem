@@ -18,6 +18,8 @@ enum IHFMedicImgVCType {
 
 class IHFMedicImgVC: UIViewController {
 
+    /************************************************************************/
+    // .h
     var vc_type = IHFMedicImgVCType.IHFMIVC_2D // Default
     var leftbar: IHFM_VC_LeftToolBar?
     let rightBar = IHFM_VC_RightToolBar()
@@ -34,7 +36,8 @@ class IHFMedicImgVC: UIViewController {
         print(btn.selected)
     }
     
-    
+    /************************************************************************/
+   // .m
     
     private let bar_Width = screen_height * 0.07;
     

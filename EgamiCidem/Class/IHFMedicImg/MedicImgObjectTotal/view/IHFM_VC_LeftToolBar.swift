@@ -34,6 +34,7 @@ class IHFM_VC_LeftToolBar: UIView {
         
         nameTitle = UILabel.init(frame: CGRect(x: 50, y: 50, width: 200, height: 35))
         nameTitle.text = "HuXiaoMing"
+        nameTitle.font = UIFont.init(name: "AmericanTypewriter", size: 19)
         nameTitle.textColor = UIColor.init(white: 0.7, alpha: 0.8)
         nameTitle.center = self.center;
         nameTitle.textAlignment = .Center;
