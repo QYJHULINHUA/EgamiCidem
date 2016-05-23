@@ -8,13 +8,38 @@
 
 import UIKit
 
-class IHFMD_MainView: UIView {
+class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
+    
+    var baseViewArray:NSMutableArray!
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
         
         let baseView = IHFMD_2D_BaseView.getInstance(.IHFMD_2D_BaseView_All, size: frame);
+        baseView.delegate = self;
         self.addSubview(baseView)
+        baseViewArray = NSMutableArray.init(object: baseView);
+        self.baseViewBtnShowControll();
+    }
+    
+    func clickBaseViewButton(btnTag: Int, baseView: IHFMD_2D_BaseView) // 点击添加按钮
+    {
+        switch btnTag {
+        case 1: break
+            
+        case 2: break
+        
+        case 3:
+            self.addBaseView(baseView);
+        case 4: break
+            
+        case 5: break
+            
+        default:
+            break
+        }
+        
+        self.baseViewBtnShowControll();
     }
     
     required init?(coder aDecoder: NSCoder) {

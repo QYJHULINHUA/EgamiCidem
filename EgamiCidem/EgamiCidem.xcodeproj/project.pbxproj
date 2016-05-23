@@ -58,6 +58,7 @@
 		993090451CEBF7A000B0AA87 /* IHFMD_MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */; };
 		9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
+		9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */; };
 		99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99DEBE5D1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */; };
@@ -156,6 +157,7 @@
 		993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView.swift; sourceTree = "<group>"; };
 		9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_2D_BaseView.swift; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
+		9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView_Animation.swift; sourceTree = "<group>"; };
 		99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisModelCollection.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRIS_SeriresCell.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */,
+				9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */,
 				9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */,
 			);
 			path = view;
@@ -759,6 +762,7 @@
 				992B03561CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				991774EE1CE30270007608D4 /* IHFRisRightView.swift in Sources */,
 				992B03681CE3521C00B72E6D /* ThHeadRefreshView.swift in Sources */,
+				9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */,
 				992B03551CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				992B03661CE3521C00B72E6D /* ThHeadArrowRefreshView.swift in Sources */,
 				992B036B1CE3521C00B72E6D /* ThRefreshConst.swift in Sources */,
