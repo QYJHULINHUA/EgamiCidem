@@ -12,7 +12,9 @@ class IHFMD_MainView: UIView {
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.redColor()
+        
+        let baseView = IHFMD_2D_BaseView.getInstance(.IHFMD_2D_BaseView_All, size: frame);
+        self.addSubview(baseView)
     }
     
     required init?(coder aDecoder: NSCoder) {

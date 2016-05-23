@@ -18,8 +18,8 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
         self.vc_type = IHFMedicImgVCType.IHFMIVC_2D
         super.viewDidLoad()
         
-        mainView_2D = IHFMD_MainView()
-        mainView_2D.frame = self.mainView.bounds;
+        let rectTemp = self.mainView.bounds
+        mainView_2D = IHFMD_MainView.init(frame: rectTemp)
         self.mainView.addSubview(mainView_2D)
         
         // Do any additional setup after loading the view.
