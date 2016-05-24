@@ -28,6 +28,7 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
         case 1:
             self.removeBasevie(baseView);
         case 2: break
+//            联动
         
         case 3:
             self.addBaseView(baseView);

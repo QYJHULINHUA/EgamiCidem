@@ -84,6 +84,7 @@ class IHFMD_2D_BaseView: UIView {
         self.addSubview(deleBtn);
         
         linkBtn.setImage(UIImage.init(named: "未联动"), forState: .Normal)
+        linkBtn.selected = false;
         self.addSubview(linkBtn);
         
         addBtn.setImage(UIImage.init(named: "添加窗口"), forState: .Normal)
@@ -113,6 +114,15 @@ class IHFMD_2D_BaseView: UIView {
         {
            let canDo = delegate!.respondsToSelector(#selector(IHFMD_MainView.clickBaseViewButton(_:baseView:)))
             if canDo {
+                if btn.tag == 2 {
+                    btn.selected = !btn.selected;
+                    if btn.selected == true {
+                        linkBtn.setImage(UIImage.init(named: "联动"), forState: .Normal)
+                    }else
+                    {
+                        linkBtn.setImage(UIImage.init(named: "未联动"), forState: .Normal)
+                    }
+                }
                 delegate!.clickBaseViewButton(btn.tag, baseView: self);
 
             }

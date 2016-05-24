@@ -18,6 +18,8 @@ extension IHFMD_MainView
             let baseV = self.baseViewArray[0] as! IHFMD_2D_BaseView;
             baseV.deleBtn.enabled = false;
             baseV.linkBtn.enabled = false;
+            baseV.linkBtn.selected = false;
+            baseV.linkBtn.setImage(UIImage.init(named: "未联动"), forState: .Normal)
             baseV.addBtn.enabled  = true;
             baseV.fullBtn.enabled = false;
             
