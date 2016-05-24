@@ -11,6 +11,7 @@ import UIKit
 class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
     
     var baseViewArray:NSMutableArray!
+    var currentBaseView:IHFMD_2D_BaseView!
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,6 +20,8 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
         baseView.delegate = self;
         self.addSubview(baseView)
         baseViewArray = NSMutableArray.init(object: baseView);
+        currentBaseView = baseView;
+        self.currentBaseViweShowDiffrent();
         self.baseViewBtnShowControll();
     }
     
@@ -28,19 +31,22 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
         case 1:
             self.removeBasevie(baseView);
         case 2: break
-//            联动
-        
         case 3:
             self.addBaseView(baseView);
         case 4: break
-            
+            //  全屏
         case 5: break
-            
+            //  cfind
         default:
             break
         }
         
         self.baseViewBtnShowControll();
+        if !currentBaseView .isEqual(baseView) {
+            currentBaseView = baseView;
+            self.currentBaseViweShowDiffrent();
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

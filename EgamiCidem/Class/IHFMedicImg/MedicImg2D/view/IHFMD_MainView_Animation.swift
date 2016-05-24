@@ -44,6 +44,19 @@ extension IHFMD_MainView
         default:
             break;
         }
+        
+    }
+    
+    func currentBaseViweShowDiffrent(){
+        for item in self.baseViewArray {
+            let aaa = item as! IHFMD_2D_BaseView;
+            if aaa .isEqual(self.currentBaseView) {
+                aaa.layer.borderColor = UIColor.init(red: 160.0 / 255.0, green: 60.0 / 255.0, blue: 60.0 / 255.0, alpha: 1).CGColor;
+            }
+            else{
+                aaa.layer.borderColor = UIColor.init(red: 60.0 / 255.0, green: 60.0 / 255.0, blue: 60.0 / 255.0, alpha: 1).CGColor;
+            }
+        }
     }
     
     // 点击添加baseview

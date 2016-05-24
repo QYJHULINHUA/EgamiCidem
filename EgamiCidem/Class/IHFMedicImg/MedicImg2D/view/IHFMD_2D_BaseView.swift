@@ -52,6 +52,11 @@ class IHFMD_2D_BaseView: UIView {
         baseView.layer.borderColor = UIColor.init(red: 60.0 / 255.0, green: 60.0 / 255.0, blue: 60.0 / 255.0, alpha: 1).CGColor;
         baseView.windowType = type;
         baseView.addButton();
+        
+
+        let tapGesture = UITapGestureRecognizer.init(target: baseView, action: #selector(IHFMD_2D_BaseView.tapGestureSelfView));
+        baseView.addGestureRecognizer(tapGesture)
+        
         return baseView;
     }
 
@@ -105,6 +110,17 @@ class IHFMD_2D_BaseView: UIView {
         }
         
         self.refreshButtonFrame();
+    }
+    
+    func tapGestureSelfView() {
+        
+        if delegate != nil
+        {
+            let canDo = delegate!.respondsToSelector(#selector(IHFMD_MainView.clickBaseViewButton(_:baseView:)))
+            if canDo {
+                delegate!.clickBaseViewButton(6, baseView: self);
+            }
+        }
     }
     
     // 点击baseview上面的button
