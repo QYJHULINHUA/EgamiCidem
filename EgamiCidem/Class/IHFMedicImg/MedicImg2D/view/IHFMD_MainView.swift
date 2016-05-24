@@ -25,8 +25,8 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
     func clickBaseViewButton(btnTag: Int, baseView: IHFMD_2D_BaseView) // 点击添加按钮
     {
         switch btnTag {
-        case 1: break
-            
+        case 1:
+            print("点击删除")
         case 2: break
         
         case 3:

@@ -10,6 +10,7 @@ import Foundation
 
 extension IHFMD_MainView
 {
+    // 控制四个按钮的状态
     func baseViewBtnShowControll() {
         switch self.baseViewArray.count {
         case 1:
@@ -43,35 +44,68 @@ extension IHFMD_MainView
         }
     }
     
+    // 点击添加baseview
     func addBaseView(baseView: IHFMD_2D_BaseView) {
         
         if baseView.windowType! == .IHFMD_2D_BaseView_All {
             
-            let addView = IHFMD_2D_BaseView.getInstance(.IHFMD_2D_BaseView_Long, size:baseView.frame);
-            addView.delegate = self;
-            addView.frame = CGRectMake(baseView.frame.size.width * 0.5, 0, addView.frame.size.width, addView.frame.size.height);
-            addView.alpha = 0.0;
-            self.addSubview(addView);
-            self.baseViewArray.addObject(addView)
-            
-            let changeSize = IHFMD_2D_BaseView.getBaseViewSize(.IHFMD_2D_BaseView_Long, size: baseView.frame);
-            UIView.animateWithDuration(0.5, animations: {
-                
-                baseView.frame = changeSize;
-                baseView.refreshButtonFrame()
-                addView.alpha = 1.0;
-                
-                }, completion: { (finished) in
-                    self.userInteractionEnabled = true;
-            })
+            self.creatAddView(baseView, windowType: .IHFMD_2D_BaseView_Long);
             
         }
         
-        if baseView {
-            <#code#>
+        else if baseView.windowType! == .IHFMD_2D_BaseView_Long{
+            
+            self.creatAddView(baseView, windowType: .IHFMD_2D_BaseView_Small);
         }
         
-        
+        else if baseView.windowType! == .IHFMD_2D_BaseView_Small{
+            
+            for item in self.baseViewArray {
+                let baseViewOther = item as! IHFMD_2D_BaseView;
+                if baseViewOther.windowType! == .IHFMD_2D_BaseView_Long {
+                    
+                    self.creatAddView(baseViewOther, windowType: .IHFMD_2D_BaseView_Small);
+                }
+            }
+            
+            
+        }
         
     }
+    
+    
+    func creatAddView(baseView: IHFMD_2D_BaseView,windowType:IHFMD_2D_BaseViewType)  {
+        
+        let addView = IHFMD_2D_BaseView.getInstance(windowType, size: baseView.frame)
+        addView.delegate = self;
+        addView.alpha = 0.0;
+        self.addSubview(addView);
+        self.baseViewArray.addObject(addView)
+        
+        var changeSize = baseView.frame;
+        if windowType == .IHFMD_2D_BaseView_Long  {
+            changeSize.size.width = 0.5 * baseView.frame.size.width;
+        }else
+        {
+        
+            changeSize.size.height = 0.5 * baseView.frame.size.height;
+        }
+        UIView.animateWithDuration(0.5, animations: {
+            
+            baseView.frame = changeSize;
+            baseView.refreshButtonFrame()
+            baseView.windowType = windowType;
+            addView.alpha = 1.0;
+            
+            }, completion: { (finished) in
+                self.userInteractionEnabled = true;
+        })
+    }
+    
 }
+
+
+
+
+
+

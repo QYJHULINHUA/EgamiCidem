@@ -58,20 +58,21 @@ class IHFMD_2D_BaseView: UIView {
     // 获得baseview size
     class func getBaseViewSize(type:IHFMD_2D_BaseViewType,size:CGRect)->CGRect
     {
+        
+        
         let W = size.width;
         let h = size.height;
-        var baseSize = CGRectMake(0, 0, W, h);
+        var baseSize = CGRectZero;
         
         switch type {
         case .IHFMD_2D_BaseView_All:
-            break ;
+            baseSize = CGRectMake(0, 0, W, h);
             
         case .IHFMD_2D_BaseView_Long:
-            baseSize.size.width = 0.5 * W;
+            baseSize = CGRectMake(0.5 * W, 0, 0.5 * W, h)
             
         case .IHFMD_2D_BaseView_Small:
-            baseSize.size.width = 0.5 * W;
-            baseSize.size.height = 0.5 * h;
+            baseSize = CGRectMake(size.origin.x, 0.5 * h, W, 0.5 * h);
         }
         
         return baseSize;
