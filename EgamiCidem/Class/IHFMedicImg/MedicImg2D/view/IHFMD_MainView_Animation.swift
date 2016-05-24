@@ -102,7 +102,7 @@ extension IHFMD_MainView
         })
     }
     
-    
+    // baseview移除及其动画
     func removeBasevie(baseView: IHFMD_2D_BaseView) {
         let origin_x = baseView.frame.origin.x;
         self.baseViewArray.removeObject(baseView);
@@ -172,6 +172,7 @@ extension IHFMD_MainView
                         rect1.origin = CGPointMake(0, 0);
                         rect1.size.height = 2.0 * rect1.size.height;
                         
+                        rect2.origin.x = rect1.size.width;
                         rect2.origin.y = 0;
                         rect2.size.height = 2.0 * rect2.size.height;
                         UIView.animateWithDuration(0.5, animations: {
@@ -193,11 +194,6 @@ extension IHFMD_MainView
                 }
             }
         }
-        
-        
-       
-        
-        
         
     }
     
