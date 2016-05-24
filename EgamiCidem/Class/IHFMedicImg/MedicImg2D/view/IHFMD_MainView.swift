@@ -26,7 +26,7 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
     {
         switch btnTag {
         case 1:
-            print("点击删除")
+            self.removeBasevie(baseView);
         case 2: break
         
         case 3:

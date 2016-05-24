@@ -102,6 +102,105 @@ extension IHFMD_MainView
         })
     }
     
+    
+    func removeBasevie(baseView: IHFMD_2D_BaseView) {
+        let origin_x = baseView.frame.origin.x;
+        self.baseViewArray.removeObject(baseView);
+        
+        if baseView.windowType! == .IHFMD_2D_BaseView_Small {
+            
+         baseView.removeFromSuperview()
+            for item in self.baseViewArray {
+                let baseOther = item as! IHFMD_2D_BaseView;
+                
+                if baseOther.frame.origin.x == origin_x {
+                    
+                    var baseOtherRect = baseOther.frame;
+                    baseOtherRect.origin.x = origin_x;
+                    baseOtherRect.origin.y = 0;
+                    baseOtherRect.size.height = 2.0 * baseOtherRect.size.height;
+                    
+                    UIView.animateWithDuration(0.5, animations: {
+                        
+                        baseOther.frame = baseOtherRect;
+                        baseOther.refreshButtonFrame()
+                        baseOther.windowType = .IHFMD_2D_BaseView_Long;
+                        
+                        }, completion: { (finished) in
+                            self.userInteractionEnabled = true;
+                    })
+                }
+            }
+        }
+        
+        else if baseView.windowType! == .IHFMD_2D_BaseView_Long
+        {
+            
+             baseView.removeFromSuperview()
+            if self.baseViewArray.count == 1
+            {
+                let baseOther = self.baseViewArray[0] as! IHFMD_2D_BaseView;
+                var baseOtherRect = baseOther.frame;
+                baseOtherRect.origin = CGPointMake(0, 0);
+                baseOtherRect.size.width = 2.0 * baseOtherRect.size.width;
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    
+                    baseOther.frame = baseOtherRect;
+                    baseOther.refreshButtonFrame()
+                    baseOther.windowType = .IHFMD_2D_BaseView_All;
+                    
+                    }, completion: { (finished) in
+                        self.userInteractionEnabled = true;
+                })
+                
+            }else if self.baseViewArray.count == 2
+            {
+                var base1:IHFMD_2D_BaseView?
+                var base2:IHFMD_2D_BaseView?
+                for item in self.baseViewArray {
+                    let a = item as! IHFMD_2D_BaseView;
+                    if a.frame.origin.y == 0 {
+                        base1 = a;
+                    }else
+                    {
+                        base2 = a;
+                    }
+                    if base1 != nil && base2 != nil {
+                        var rect1 = base1!.frame;
+                        var rect2 = base2!.frame;
+                        rect1.origin = CGPointMake(0, 0);
+                        rect1.size.height = 2.0 * rect1.size.height;
+                        
+                        rect2.origin.y = 0;
+                        rect2.size.height = 2.0 * rect2.size.height;
+                        UIView.animateWithDuration(0.5, animations: {
+                            
+                            base1!.frame = rect1;
+                            base1!.refreshButtonFrame()
+                            base1!.windowType = .IHFMD_2D_BaseView_Long;
+                            
+                            base2!.frame = rect2;
+                            base2!.refreshButtonFrame()
+                            base2!.windowType = .IHFMD_2D_BaseView_Long;
+                            
+                            }, completion: { (finished) in
+                                self.userInteractionEnabled = true;
+                        })
+                        
+                    }
+                    
+                }
+            }
+        }
+        
+        
+       
+        
+        
+        
+    }
+    
 }
 
 
