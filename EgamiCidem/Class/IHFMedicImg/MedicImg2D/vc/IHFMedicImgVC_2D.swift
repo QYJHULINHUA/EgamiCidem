@@ -11,13 +11,16 @@ import UIKit
 class IHFMedicImgVC_2D: IHFMedicImgVC {
 
     var mainView_2D  : IHFMD_MainView! = nil
+    var seriresArrr = NSMutableArray()
+    
+    
+
     
     
     override func viewDidLoad() {
-       
         self.vc_type = IHFMedicImgVCType.IHFMIVC_2D
         super.viewDidLoad()
-        
+        self.getSeriresArrr();
         let rectTemp = self.mainView.bounds
         mainView_2D = IHFMD_MainView.init(frame: rectTemp)
         self.mainView.addSubview(mainView_2D)
@@ -39,6 +42,35 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getSeriresArrr(){
+        let path = NSBundle.mainBundle().pathForResource("imageData", ofType: "bundle");
+        if path != nil
+        {
+            let manager = NSFileManager.defaultManager()
+            let contentsOfURL = try? manager.contentsOfDirectoryAtPath(path! as String);
+            if contentsOfURL != nil {
+                for item in contentsOfURL! {
+                    let contentsOfURL2 = try? manager.contentsOfDirectoryAtPath(path! + "/" + item as String);
+                    if contentsOfURL2 != nil {
+                        for item2 in contentsOfURL2! {
+                            
+                            let contentsOfURL3 = try? manager.contentsOfDirectoryAtPath(path! + "/" + item + "/" + item2 as String);
+                            
+                            for item3 in contentsOfURL3! {
+                                let pinfo = IHFMedicImg2D_PInfo()
+                                pinfo.patient_ID = item;
+                                pinfo.study_ID = item2;
+                                pinfo.serires_ID = item3;
+                                seriresArrr.addObject(pinfo);
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
     
     

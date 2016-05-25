@@ -56,6 +56,26 @@
 		993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */; };
 		993090431CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */; };
 		993090451CEBF7A000B0AA87 /* IHFMD_MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */; };
+		993631E01CF470840045F44D /* esCreateTexture.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631C21CF470840045F44D /* esCreateTexture.c */; };
+		993631E11CF470840045F44D /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631C41CF470840045F44D /* esShader.c */; };
+		993631E21CF470840045F44D /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631C61CF470840045F44D /* esShapes.c */; };
+		993631E31CF470840045F44D /* esSharpener.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631C71CF470840045F44D /* esSharpener.c */; };
+		993631E41CF470840045F44D /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631C91CF470840045F44D /* esTransform.c */; };
+		993631E51CF470840045F44D /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631CA1CF470840045F44D /* esUtil.c */; };
+		993631E61CF470840045F44D /* Simple_Texture2D.c in Sources */ = {isa = PBXBuildFile; fileRef = 993631CD1CF470840045F44D /* Simple_Texture2D.c */; };
+		993631E71CF470840045F44D /* FileWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631D11CF470840045F44D /* FileWrapper.m */; };
+		993631E81CF470840045F44D /* GLES_ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631D31CF470840045F44D /* GLES_ImageData.m */; };
+		993631E91CF470840045F44D /* IHFGLESTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631D51CF470840045F44D /* IHFGLESTools.m */; };
+		993631EA1CF470840045F44D /* IHFLinearMeasureVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631D71CF470840045F44D /* IHFLinearMeasureVIew.m */; };
+		993631EB1CF470840045F44D /* IHFMyGLKViewController+instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631D91CF470840045F44D /* IHFMyGLKViewController+instance.m */; };
+		993631EC1CF470840045F44D /* IHFMyGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631DB1CF470840045F44D /* IHFMyGLKViewController.m */; };
+		993631ED1CF470840045F44D /* UIView+HierarchySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631DD1CF470840045F44D /* UIView+HierarchySupport.m */; };
+		993631EE1CF470840045F44D /* UIViewController+selfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 993631DF1CF470840045F44D /* UIViewController+selfManager.m */; };
+		993631F01CF471310045F44D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993631EF1CF471300045F44D /* CoreGraphics.framework */; };
+		993631F21CF4713A0045F44D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993631F11CF4713A0045F44D /* GLKit.framework */; };
+		993631F41CF471420045F44D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993631F31CF471420045F44D /* OpenGLES.framework */; };
+		993631F61CF4741D0045F44D /* imageData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 993631F51CF4741D0045F44D /* imageData.bundle */; };
+		993631FB1CF475770045F44D /* IHFMedicImg2D_PInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */; };
 		9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */; };
@@ -155,6 +175,40 @@
 		993090401CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImgVC_2D.swift; sourceTree = "<group>"; };
 		993090421CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFM_VC_RightToolBar.swift; sourceTree = "<group>"; };
 		993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView.swift; sourceTree = "<group>"; };
+		993631C21CF470840045F44D /* esCreateTexture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esCreateTexture.c; sourceTree = "<group>"; };
+		993631C31CF470840045F44D /* esCreateTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esCreateTexture.h; sourceTree = "<group>"; };
+		993631C41CF470840045F44D /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
+		993631C51CF470840045F44D /* esShaderStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esShaderStr.h; sourceTree = "<group>"; };
+		993631C61CF470840045F44D /* esShapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShapes.c; sourceTree = "<group>"; };
+		993631C71CF470840045F44D /* esSharpener.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esSharpener.c; sourceTree = "<group>"; };
+		993631C81CF470840045F44D /* esSharpener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esSharpener.h; sourceTree = "<group>"; };
+		993631C91CF470840045F44D /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
+		993631CA1CF470840045F44D /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
+		993631CB1CF470840045F44D /* esUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil.h; sourceTree = "<group>"; };
+		993631CC1CF470840045F44D /* ihefeImageLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ihefeImageLUT.h; sourceTree = "<group>"; };
+		993631CD1CF470840045F44D /* Simple_Texture2D.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Simple_Texture2D.c; sourceTree = "<group>"; };
+		993631CE1CF470840045F44D /* IHFMedicImgGLES使用说明.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IHFMedicImgGLES使用说明.h"; sourceTree = "<group>"; };
+		993631D01CF470840045F44D /* FileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWrapper.h; sourceTree = "<group>"; };
+		993631D11CF470840045F44D /* FileWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWrapper.m; sourceTree = "<group>"; };
+		993631D21CF470840045F44D /* GLES_ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLES_ImageData.h; sourceTree = "<group>"; };
+		993631D31CF470840045F44D /* GLES_ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLES_ImageData.m; sourceTree = "<group>"; };
+		993631D41CF470840045F44D /* IHFGLESTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFGLESTools.h; sourceTree = "<group>"; };
+		993631D51CF470840045F44D /* IHFGLESTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHFGLESTools.m; sourceTree = "<group>"; };
+		993631D61CF470840045F44D /* IHFLinearMeasureVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFLinearMeasureVIew.h; sourceTree = "<group>"; };
+		993631D71CF470840045F44D /* IHFLinearMeasureVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHFLinearMeasureVIew.m; sourceTree = "<group>"; };
+		993631D81CF470840045F44D /* IHFMyGLKViewController+instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IHFMyGLKViewController+instance.h"; sourceTree = "<group>"; };
+		993631D91CF470840045F44D /* IHFMyGLKViewController+instance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IHFMyGLKViewController+instance.m"; sourceTree = "<group>"; };
+		993631DA1CF470840045F44D /* IHFMyGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFMyGLKViewController.h; sourceTree = "<group>"; };
+		993631DB1CF470840045F44D /* IHFMyGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHFMyGLKViewController.m; sourceTree = "<group>"; };
+		993631DC1CF470840045F44D /* UIView+HierarchySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HierarchySupport.h"; sourceTree = "<group>"; };
+		993631DD1CF470840045F44D /* UIView+HierarchySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HierarchySupport.m"; sourceTree = "<group>"; };
+		993631DE1CF470840045F44D /* UIViewController+selfManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+selfManager.h"; sourceTree = "<group>"; };
+		993631DF1CF470840045F44D /* UIViewController+selfManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+selfManager.m"; sourceTree = "<group>"; };
+		993631EF1CF471300045F44D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		993631F11CF4713A0045F44D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		993631F31CF471420045F44D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		993631F51CF4741D0045F44D /* imageData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = imageData.bundle; sourceTree = "<group>"; };
+		993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImg2D_PInfo.swift; sourceTree = "<group>"; };
 		9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_2D_BaseView.swift; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView_Animation.swift; sourceTree = "<group>"; };
@@ -176,6 +230,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993631F41CF471420045F44D /* OpenGLES.framework in Frameworks */,
+				993631F21CF4713A0045F44D /* GLKit.framework in Frameworks */,
+				993631F01CF471310045F44D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +343,7 @@
 		9916E7A81CE1D865001AAFAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				993631F51CF4741D0045F44D /* imageData.bundle */,
 				9916E7A91CE1D865001AAFAF /* image */,
 				9916E7AC1CE1D865001AAFAF /* Library */,
 			);
@@ -304,6 +362,7 @@
 		9916E7AC1CE1D865001AAFAF /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				993631C01CF470840045F44D /* IHFGLES */,
 				99DEBE921CEAF2EA00B0217E /* gtmbase64 */,
 				99E6B45E1CE5896700EF0077 /* IHFMantle */,
 				992B03581CE3521C00B72E6D /* ThPullRefresh */,
@@ -353,6 +412,9 @@
 		99236A551CE1CABF007B558D = {
 			isa = PBXGroup;
 			children = (
+				993631F31CF471420045F44D /* OpenGLES.framework */,
+				993631F11CF4713A0045F44D /* GLKit.framework */,
+				993631EF1CF471300045F44D /* CoreGraphics.framework */,
 				9916E7A81CE1D865001AAFAF /* Resources */,
 				9916E7A51CE1D83B001AAFAF /* iHFMNet */,
 				9916E7A21CE1D813001AAFAF /* Support */,
@@ -540,6 +602,7 @@
 		9930903D1CEB01EB00B0AA87 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -560,6 +623,58 @@
 				9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		993631C01CF470840045F44D /* IHFGLES */ = {
+			isa = PBXGroup;
+			children = (
+				993631C11CF470840045F44D /* GLES */,
+				993631CE1CF470840045F44D /* IHFMedicImgGLES使用说明.h */,
+				993631CF1CF470840045F44D /* iOS */,
+			);
+			path = IHFGLES;
+			sourceTree = "<group>";
+		};
+		993631C11CF470840045F44D /* GLES */ = {
+			isa = PBXGroup;
+			children = (
+				993631C21CF470840045F44D /* esCreateTexture.c */,
+				993631C31CF470840045F44D /* esCreateTexture.h */,
+				993631C41CF470840045F44D /* esShader.c */,
+				993631C51CF470840045F44D /* esShaderStr.h */,
+				993631C61CF470840045F44D /* esShapes.c */,
+				993631C71CF470840045F44D /* esSharpener.c */,
+				993631C81CF470840045F44D /* esSharpener.h */,
+				993631C91CF470840045F44D /* esTransform.c */,
+				993631CA1CF470840045F44D /* esUtil.c */,
+				993631CB1CF470840045F44D /* esUtil.h */,
+				993631CC1CF470840045F44D /* ihefeImageLUT.h */,
+				993631CD1CF470840045F44D /* Simple_Texture2D.c */,
+			);
+			path = GLES;
+			sourceTree = "<group>";
+		};
+		993631CF1CF470840045F44D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				993631D01CF470840045F44D /* FileWrapper.h */,
+				993631D11CF470840045F44D /* FileWrapper.m */,
+				993631D21CF470840045F44D /* GLES_ImageData.h */,
+				993631D31CF470840045F44D /* GLES_ImageData.m */,
+				993631D41CF470840045F44D /* IHFGLESTools.h */,
+				993631D51CF470840045F44D /* IHFGLESTools.m */,
+				993631D61CF470840045F44D /* IHFLinearMeasureVIew.h */,
+				993631D71CF470840045F44D /* IHFLinearMeasureVIew.m */,
+				993631D81CF470840045F44D /* IHFMyGLKViewController+instance.h */,
+				993631D91CF470840045F44D /* IHFMyGLKViewController+instance.m */,
+				993631DA1CF470840045F44D /* IHFMyGLKViewController.h */,
+				993631DB1CF470840045F44D /* IHFMyGLKViewController.m */,
+				993631DC1CF470840045F44D /* UIView+HierarchySupport.h */,
+				993631DD1CF470840045F44D /* UIView+HierarchySupport.m */,
+				993631DE1CF470840045F44D /* UIViewController+selfManager.h */,
+				993631DF1CF470840045F44D /* UIViewController+selfManager.m */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		99D1BB5E1CE2DB82007A438C /* model */ = {
@@ -721,6 +836,7 @@
 				9916E7C61CE1D865001AAFAF /* IHEFEVersion.png in Resources */,
 				992B03691CE3521C00B72E6D /* ThRefresh.bundle in Resources */,
 				9916E7C71CE1D865001AAFAF /* IHEFEVersionPRO.png in Resources */,
+				993631F61CF4741D0045F44D /* imageData.bundle in Resources */,
 				99236A671CE1CABF007B558D /* Main.storyboard in Resources */,
 				99DEBE911CEAEE2000B0217E /* Thumbnail.jpg in Resources */,
 			);
@@ -749,33 +865,46 @@
 			files = (
 				9916E7D01CE1D865001AAFAF /* AFURLSessionManager.m in Sources */,
 				991774F01CE3133C007608D4 /* IHFRisSearchView.swift in Sources */,
+				993631E41CF470840045F44D /* esTransform.c in Sources */,
 				9930903C1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift in Sources */,
 				9916E7CD1CE1D865001AAFAF /* AFURLConnectionOperation.m in Sources */,
 				9930903A1CEB000D00B0AA87 /* IHFMedicImgVC.swift in Sources */,
 				993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */,
+				993631E11CF470840045F44D /* esShader.c in Sources */,
+				993631EC1CF470840045F44D /* IHFMyGLKViewController.m in Sources */,
 				9916E7D11CE1D865001AAFAF /* CKHttpClient.m in Sources */,
+				993631E71CF470840045F44D /* FileWrapper.m in Sources */,
 				992B034C1CE345E200B72E6D /* IHFRisListView.swift in Sources */,
 				992B03671CE3521C00B72E6D /* ThHeadBounceRefreshView.swift in Sources */,
+				993631E61CF470840045F44D /* Simple_Texture2D.c in Sources */,
 				9916E7C81CE1D865001AAFAF /* AFHTTPRequestOperation.m in Sources */,
 				99DEBE961CEAF2EA00B0217E /* GTMBase64.m in Sources */,
 				9916E7A71CE1D83B001AAFAF /* IHFN_Login.swift in Sources */,
 				992B03561CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				993631E51CF470840045F44D /* esUtil.c in Sources */,
 				991774EE1CE30270007608D4 /* IHFRisRightView.swift in Sources */,
 				992B03681CE3521C00B72E6D /* ThHeadRefreshView.swift in Sources */,
 				9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */,
+				993631ED1CF470840045F44D /* UIView+HierarchySupport.m in Sources */,
 				992B03551CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				992B03661CE3521C00B72E6D /* ThHeadArrowRefreshView.swift in Sources */,
 				992B036B1CE3521C00B72E6D /* ThRefreshConst.swift in Sources */,
+				993631E21CF470840045F44D /* esShapes.c in Sources */,
 				992B036C1CE3521C00B72E6D /* UIScrollView+Extension.swift in Sources */,
 				9916E7C91CE1D865001AAFAF /* AFHTTPRequestOperationManager.m in Sources */,
 				992B03651CE3521C00B72E6D /* ThFootRefreshView.swift in Sources */,
 				997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */,
 				992B036D1CE3521C00B72E6D /* UIScrollView+ThRefresh.swift in Sources */,
 				993090431CEB0C8B00B0AA87 /* IHFM_VC_RightToolBar.swift in Sources */,
+				993631EE1CF470840045F44D /* UIViewController+selfManager.m in Sources */,
 				99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */,
 				99236A641CE1CABF007B558D /* ViewController.swift in Sources */,
 				9916E7A41CE1D813001AAFAF /* IHFSupportDefine.swift in Sources */,
+				993631EB1CF470840045F44D /* IHFMyGLKViewController+instance.m in Sources */,
+				993631E31CF470840045F44D /* esSharpener.c in Sources */,
+				993631FB1CF475770045F44D /* IHFMedicImg2D_PInfo.swift in Sources */,
 				992B036A1CE3521C00B72E6D /* ThRefreshBasicView.swift in Sources */,
+				993631E01CF470840045F44D /* esCreateTexture.c in Sources */,
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,
 				99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
@@ -785,6 +914,7 @@
 				99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */,
 				9916E79B1CE1D7C4001AAFAF /* IHFLoginView.swift in Sources */,
 				9916E7CC1CE1D865001AAFAF /* AFSecurityPolicy.m in Sources */,
+				993631E91CF470840045F44D /* IHFGLESTools.m in Sources */,
 				9916E79D1CE1D7C4001AAFAF /* IHFRisViewController.swift in Sources */,
 				9916E7CE1CE1D865001AAFAF /* AFURLRequestSerialization.m in Sources */,
 				9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */,
@@ -792,10 +922,12 @@
 				99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */,
 				9916E7CB1CE1D865001AAFAF /* AFNetworkReachabilityManager.m in Sources */,
 				99DEBE5D1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift in Sources */,
+				993631E81CF470840045F44D /* GLES_ImageData.m in Sources */,
 				992B036E1CE3521C00B72E6D /* UIView+Extension.swift in Sources */,
 				992B03531CE3478900B72E6D /* DGElasticPullToRefreshConstants.swift in Sources */,
 				9916E7CF1CE1D865001AAFAF /* AFURLResponseSerialization.m in Sources */,
 				9916E7A11CE1D7EB001AAFAF /* IHFMAccountModel.swift in Sources */,
+				993631EA1CF470840045F44D /* IHFLinearMeasureVIew.m in Sources */,
 				9916E7D21CE1D865001AAFAF /* IHFMAlertView.swift in Sources */,
 				992B03571CE3478900B72E6D /* DGElasticPullToRefreshView.swift in Sources */,
 				992B03541CE3478900B72E6D /* DGElasticPullToRefreshExtensions.swift in Sources */,
@@ -942,6 +1074,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -958,6 +1091,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
