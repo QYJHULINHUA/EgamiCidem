@@ -76,10 +76,15 @@
 		993631F41CF471420045F44D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993631F31CF471420045F44D /* OpenGLES.framework */; };
 		993631F61CF4741D0045F44D /* imageData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 993631F51CF4741D0045F44D /* imageData.bundle */; };
 		993631FB1CF475770045F44D /* IHFMedicImg2D_PInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */; };
+		993631FD1CF531380045F44D /* IHFMedicImgReqClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993631FC1CF531380045F44D /* IHFMedicImgReqClass.swift */; };
+		993631FF1CF531F30045F44D /* IHFReq_2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993631FE1CF531F30045F44D /* IHFReq_2D.swift */; };
 		9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */; };
 		997EEC781CE5858D00BC6E65 /* IHFN_Ris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */; };
 		9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */; };
 		99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */; };
+		99A84D1C1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */; };
+		99A84D1D1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */; };
+		99A84D1F1CFBE3C0000183A9 /* IHFMD_CFindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99DEBE5D1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */; };
 		99DEBE911CEAEE2000B0217E /* Thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99DEBE901CEAEE2000B0217E /* Thumbnail.jpg */; };
@@ -209,10 +214,15 @@
 		993631F31CF471420045F44D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		993631F51CF4741D0045F44D /* imageData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = imageData.bundle; sourceTree = "<group>"; };
 		993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImg2D_PInfo.swift; sourceTree = "<group>"; };
+		993631FC1CF531380045F44D /* IHFMedicImgReqClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMedicImgReqClass.swift; sourceTree = "<group>"; };
+		993631FE1CF531F30045F44D /* IHFReq_2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFReq_2D.swift; sourceTree = "<group>"; };
 		9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_2D_BaseView.swift; sourceTree = "<group>"; };
 		997EEC771CE5858D00BC6E65 /* IHFN_Ris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFN_Ris.swift; sourceTree = "<group>"; };
 		9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_MainView_Animation.swift; sourceTree = "<group>"; };
 		99A3C4DF1CE9B6B600EB5680 /* IHFRisModelCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisModelCollection.swift; sourceTree = "<group>"; };
+		99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_CFindTableCell.swift; sourceTree = "<group>"; };
+		99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHFMD_CFindTableCell.xib; sourceTree = "<group>"; };
+		99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_CFindView.swift; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRIS_SeriresCell.swift; sourceTree = "<group>"; };
 		99DEBE901CEAEE2000B0217E /* Thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumbnail.jpg; sourceTree = "<group>"; };
@@ -578,6 +588,7 @@
 		993090361CEAFFD100B0AA87 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				993631FC1CF531380045F44D /* IHFMedicImgReqClass.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -603,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */,
+				993631FE1CF531F30045F44D /* IHFReq_2D.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -621,6 +633,9 @@
 				993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */,
 				9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */,
 				9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */,
+				99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */,
+				99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */,
+				99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -831,6 +846,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A84D1D1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib in Resources */,
 				99236A6C1CE1CABF007B558D /* LaunchScreen.storyboard in Resources */,
 				99236A691CE1CABF007B558D /* Assets.xcassets in Resources */,
 				9916E7C61CE1D865001AAFAF /* IHEFEVersion.png in Resources */,
@@ -869,6 +885,7 @@
 				9930903C1CEB017900B0AA87 /* IHFM_VC_LeftToolBar.swift in Sources */,
 				9916E7CD1CE1D865001AAFAF /* AFURLConnectionOperation.m in Sources */,
 				9930903A1CEB000D00B0AA87 /* IHFMedicImgVC.swift in Sources */,
+				99A84D1F1CFBE3C0000183A9 /* IHFMD_CFindView.swift in Sources */,
 				993090411CEB023D00B0AA87 /* IHFMedicImgVC_2D.swift in Sources */,
 				993631E11CF470840045F44D /* esShader.c in Sources */,
 				993631EC1CF470840045F44D /* IHFMyGLKViewController.m in Sources */,
@@ -879,8 +896,10 @@
 				993631E61CF470840045F44D /* Simple_Texture2D.c in Sources */,
 				9916E7C81CE1D865001AAFAF /* AFHTTPRequestOperation.m in Sources */,
 				99DEBE961CEAF2EA00B0217E /* GTMBase64.m in Sources */,
+				99A84D1C1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift in Sources */,
 				9916E7A71CE1D83B001AAFAF /* IHFN_Login.swift in Sources */,
 				992B03561CE3478900B72E6D /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				993631FF1CF531F30045F44D /* IHFReq_2D.swift in Sources */,
 				993631E51CF470840045F44D /* esUtil.c in Sources */,
 				991774EE1CE30270007608D4 /* IHFRisRightView.swift in Sources */,
 				992B03681CE3521C00B72E6D /* ThHeadRefreshView.swift in Sources */,
@@ -919,6 +938,7 @@
 				9916E7CE1CE1D865001AAFAF /* AFURLRequestSerialization.m in Sources */,
 				9937C1091CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift in Sources */,
 				99F82F1F1CE953B900B4A45F /* IHFRisSeriesListView.swift in Sources */,
+				993631FD1CF531380045F44D /* IHFMedicImgReqClass.swift in Sources */,
 				99F82F191CE6232C00B4A45F /* IHFRisReportView.swift in Sources */,
 				9916E7CB1CE1D865001AAFAF /* AFNetworkReachabilityManager.m in Sources */,
 				99DEBE5D1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift in Sources */,
@@ -1074,6 +1094,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1091,6 +1112,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = EgamiCidem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

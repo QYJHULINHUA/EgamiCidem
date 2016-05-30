@@ -11,20 +11,16 @@ import UIKit
 class IHFMedicImgVC_2D: IHFMedicImgVC {
 
     var mainView_2D  : IHFMD_MainView! = nil
-    var seriresArrr = NSMutableArray()
-    
-    
-
     
     
     override func viewDidLoad() {
         self.vc_type = IHFMedicImgVCType.IHFMIVC_2D
         super.viewDidLoad()
-        self.getSeriresArrr();
+        
         let rectTemp = self.mainView.bounds
         mainView_2D = IHFMD_MainView.init(frame: rectTemp)
         self.mainView.addSubview(mainView_2D)
-        
+        self.getSeriresArrr();
         // Do any additional setup after loading the view.
     }
     
@@ -63,7 +59,7 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
                                 pinfo.patient_ID = item;
                                 pinfo.study_ID = item2;
                                 pinfo.serires_ID = item3;
-                                seriresArrr.addObject(pinfo);
+                                mainView_2D.seriresArrr.addObject(pinfo);
                             }
                             
                         }
@@ -75,14 +71,5 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
     
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

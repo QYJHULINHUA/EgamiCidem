@@ -8,10 +8,14 @@
 
 import UIKit
 
-class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
+class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate,UITableViewDelegate {
     
     var baseViewArray:NSMutableArray!
     var currentBaseView:IHFMD_2D_BaseView!
+    var seriresArrr = NSMutableArray()
+    var cfindView : IHFMD_CFindView!
+    
+    
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,6 +27,18 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
         currentBaseView = baseView;
         self.currentBaseViweShowDiffrent();
         self.baseViewBtnShowControll();
+        
+        self.initCfindView();
+    }
+    
+    
+    func initCfindView() {
+        
+        cfindView = IHFMD_CFindView.init(frame: CGRectMake(3, 50, 320, 500));
+        self.addSubview(cfindView);
+        cfindView.tableView.delegate = self;
+        cfindView.hidden = true;
+        
     }
     
     func clickBaseViewButton(btnTag: Int, baseView: IHFMD_2D_BaseView) // 点击添加按钮
@@ -35,7 +51,13 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
             self.addBaseView(baseView);
         case 4: break
             //  全屏
-        case 5: break
+        case 5:
+    
+            if cfindView.hidden {
+                cfindView.hidden = false;
+                cfindView.reloadDataWithArray(seriresArrr);
+            }
+                
             //  cfind
         default:
             break
@@ -46,6 +68,11 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate {
             currentBaseView = baseView;
             self.currentBaseViweShowDiffrent();
         }
+        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        cfindView.hidden = true;
         
     }
     

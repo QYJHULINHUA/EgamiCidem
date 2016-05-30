@@ -33,6 +33,7 @@ class IHFMD_2D_BaseView: UIView {
     let addBtn = UIButton();
     let fullBtn = UIButton();
     let cfindBtn = UIButton();
+    let reqClass = IHFReq_2D();
     
     
     private let ToolButtonWH:CGFloat = 34.0
