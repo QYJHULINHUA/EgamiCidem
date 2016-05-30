@@ -8,7 +8,8 @@
 
 
 #import <GLKit/GLKit.h>
-@class GLES_ImageData;
+#import "GLES_ImageData.h"
+//@class GLES_ImageData;
 @protocol IHFMyGLKViewControllerDelegate <NSObject>
 
 @optional

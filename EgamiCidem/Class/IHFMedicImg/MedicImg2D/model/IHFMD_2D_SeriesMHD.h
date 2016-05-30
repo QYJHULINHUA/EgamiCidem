@@ -62,6 +62,8 @@ struct dicSpacing{
 
 @property (nonatomic ,assign)BOOL isUnsigned;
 
+
+
 /*!
  *  @author hulinhua, 16-04-29 15:04:33
  *

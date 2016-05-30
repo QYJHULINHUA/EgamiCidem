@@ -27,6 +27,7 @@ class IHFMD_2D_BaseView: UIView {
     
     var windowType :IHFMD_2D_BaseViewType!
     weak var delegate :IHFMD_2D_BaseViewButtonDelegate?
+    var openGLVC:IHFMyGLKViewController?
     
     let deleBtn = UIButton();
     let linkBtn = UIButton();
