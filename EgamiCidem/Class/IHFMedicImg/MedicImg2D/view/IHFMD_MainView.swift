@@ -73,6 +73,7 @@ class IHFMD_MainView: UIView,IHFMD_2D_BaseViewButtonDelegate,UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         cfindView.hidden = true;
+        self.currentBaseView.configPatientInfo(pinfo: seriresArrr[indexPath.row] as! IHFMedicImg2D_PInfo);
         
     }
     

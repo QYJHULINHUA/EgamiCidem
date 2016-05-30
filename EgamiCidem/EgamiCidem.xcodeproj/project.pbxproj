@@ -85,6 +85,9 @@
 		99A84D1C1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */; };
 		99A84D1D1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */; };
 		99A84D1F1CFBE3C0000183A9 /* IHFMD_CFindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */; };
+		99A84D211CFBF3FD000183A9 /* IHFMD_2D_BaseViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A84D201CFBF3FD000183A9 /* IHFMD_2D_BaseViewManager.swift */; };
+		99ADBECA1CFC13250024ACBD /* IHFMD_2D_SeriesMHD.mm in Sources */ = {isa = PBXBuildFile; fileRef = 99ADBEC91CFC13250024ACBD /* IHFMD_2D_SeriesMHD.mm */; };
+		99ADBECD1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 99ADBECC1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.m */; };
 		99D1BB621CE2DBC8007A438C /* IHFRisLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */; };
 		99DEBE5D1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */; };
 		99DEBE911CEAEE2000B0217E /* Thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99DEBE901CEAEE2000B0217E /* Thumbnail.jpg */; };
@@ -223,6 +226,11 @@
 		99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_CFindTableCell.swift; sourceTree = "<group>"; };
 		99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHFMD_CFindTableCell.xib; sourceTree = "<group>"; };
 		99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_CFindView.swift; sourceTree = "<group>"; };
+		99A84D201CFBF3FD000183A9 /* IHFMD_2D_BaseViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFMD_2D_BaseViewManager.swift; sourceTree = "<group>"; };
+		99ADBEC81CFC13250024ACBD /* IHFMD_2D_SeriesMHD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFMD_2D_SeriesMHD.h; sourceTree = "<group>"; };
+		99ADBEC91CFC13250024ACBD /* IHFMD_2D_SeriesMHD.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IHFMD_2D_SeriesMHD.mm; sourceTree = "<group>"; };
+		99ADBECB1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFMD_2D_dcmPictureInfo.h; sourceTree = "<group>"; };
+		99ADBECC1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHFMD_2D_dcmPictureInfo.m; sourceTree = "<group>"; };
 		99D1BB611CE2DBC8007A438C /* IHFRisLeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRisLeftView.swift; sourceTree = "<group>"; };
 		99DEBE5C1CEAC96F00B0217E /* IHFRIS_SeriresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHFRIS_SeriresCell.swift; sourceTree = "<group>"; };
 		99DEBE901CEAEE2000B0217E /* Thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumbnail.jpg; sourceTree = "<group>"; };
@@ -615,6 +623,10 @@
 			children = (
 				993631FA1CF475770045F44D /* IHFMedicImg2D_PInfo.swift */,
 				993631FE1CF531F30045F44D /* IHFReq_2D.swift */,
+				99ADBEC81CFC13250024ACBD /* IHFMD_2D_SeriesMHD.h */,
+				99ADBEC91CFC13250024ACBD /* IHFMD_2D_SeriesMHD.mm */,
+				99ADBECB1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.h */,
+				99ADBECC1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -633,6 +645,7 @@
 				993090441CEBF7A000B0AA87 /* IHFMD_MainView.swift */,
 				9991629B1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift */,
 				9937C1081CED5E6D00DB5A39 /* IHFMD_2D_BaseView.swift */,
+				99A84D201CFBF3FD000183A9 /* IHFMD_2D_BaseViewManager.swift */,
 				99A84D1E1CFBE3C0000183A9 /* IHFMD_CFindView.swift */,
 				99A84D1A1CFBE1E8000183A9 /* IHFMD_CFindTableCell.swift */,
 				99A84D1B1CFBE1E8000183A9 /* IHFMD_CFindTableCell.xib */,
@@ -906,6 +919,7 @@
 				9991629C1CF2DD1A00DE40D0 /* IHFMD_MainView_Animation.swift in Sources */,
 				993631ED1CF470840045F44D /* UIView+HierarchySupport.m in Sources */,
 				992B03551CE3478900B72E6D /* DGElasticPullToRefreshLoadingView.swift in Sources */,
+				99ADBECA1CFC13250024ACBD /* IHFMD_2D_SeriesMHD.mm in Sources */,
 				992B03661CE3521C00B72E6D /* ThHeadArrowRefreshView.swift in Sources */,
 				992B036B1CE3521C00B72E6D /* ThRefreshConst.swift in Sources */,
 				993631E21CF470840045F44D /* esShapes.c in Sources */,
@@ -925,9 +939,11 @@
 				992B036A1CE3521C00B72E6D /* ThRefreshBasicView.swift in Sources */,
 				993631E01CF470840045F44D /* esCreateTexture.c in Sources */,
 				9916E7CA1CE1D865001AAFAF /* AFHTTPSessionManager.m in Sources */,
+				99A84D211CFBF3FD000183A9 /* IHFMD_2D_BaseViewManager.swift in Sources */,
 				99A3C4E01CE9B6B600EB5680 /* IHFRisModelCollection.swift in Sources */,
 				99236A621CE1CABF007B558D /* AppDelegate.swift in Sources */,
 				9916E79C1CE1D7C4001AAFAF /* IHFLoginViewController.swift in Sources */,
+				99ADBECD1CFC26620024ACBD /* IHFMD_2D_dcmPictureInfo.m in Sources */,
 				993090451CEBF7A000B0AA87 /* IHFMD_MainView.swift in Sources */,
 				99E6B4601CE5898500EF0077 /* IHFMantleHTL.swift in Sources */,
 				99FE942C1CE5C34E00357992 /* IHFPatientListCell.swift in Sources */,
