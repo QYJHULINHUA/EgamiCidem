@@ -252,14 +252,7 @@ extern void esMain( ESContext *esContext , void *data,GLuint width,GLuint height
     }
 }
 
-//#pragma mark - 30帧每秒的刷新时需要做的事（并没有真实的用到）
-//- (void)update
-//{
-//    if ( _esContext.updateFunc )
-//    {
-//        _esContext.updateFunc( &_esContext, self.timeSinceLastUpdate);
-//    }
-//}
+
 
 #pragma mark - 绘制函数
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect

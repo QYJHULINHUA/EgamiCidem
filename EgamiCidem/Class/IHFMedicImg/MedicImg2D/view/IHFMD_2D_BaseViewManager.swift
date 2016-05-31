@@ -56,12 +56,18 @@ extension IHFMD_2D_BaseView
         let openGLVC = IHFMyGLKViewController();
         openGLVC.imgRealAspect = aspect;
         openGLVC.sourceimageData = data;
+        let pana = UIPanGestureRecognizer.init(target: openGLVC, action: #selector(IHFMyGLKViewController.PanGestHandle(_:)));
+        self.addGestureRecognizer(pana)
+        
+        let pin = UIPinchGestureRecognizer.init(target: openGLVC, action: #selector(IHFMyGLKViewController.getScaleAndLocation(_:)));
+        self.addGestureRecognizer(pin)
+        
+
         let selfVC = self.getCurrentViewVC(self)
         self.insertSubview(openGLVC.view, atIndex: 0)
         selfVC?.addChildViewController(openGLVC);
         openGLVC.view.frame = self.frame;
         let fisrtDcm = self.reqClass.seriesMhd.dcmPictrueInfoArray[0] as! IHFMD_2D_dcmPictureInfo;
-        
         
         let  wl  =  CGFloat ( (fisrtDcm.defaultWL as NSString).floatValue)
         let  ww  =  CGFloat ( (fisrtDcm.defaultWW as NSString).floatValue)
