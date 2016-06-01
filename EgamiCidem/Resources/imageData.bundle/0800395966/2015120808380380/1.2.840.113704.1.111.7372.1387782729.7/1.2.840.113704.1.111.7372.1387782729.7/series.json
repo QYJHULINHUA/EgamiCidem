@@ -1,0 +1,12 @@
+{
+   "SopArray" : [
+      {
+         "sopNum" : "51",
+         "sopStr" : "1.2.840.113704.1.111.7040.1387782772.19857"
+      }
+   ],
+   "SopNum" : 1,
+   "ihefeRecon2D" : false,
+   "ihefeRequestType" : "NORMAL",
+   "ihefeTimeSeries" : false
+}

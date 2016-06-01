@@ -22,7 +22,7 @@ class IHFMedicImgVC: UIViewController {
     // .h
     var vc_type = IHFMedicImgVCType.IHFMIVC_2D // Default
     var leftbar: IHFM_VC_LeftToolBar?
-    let rightBar = IHFM_VC_RightToolBar()
+    var rightBar : IHFM_VC_RightToolBar!
     let mainView = UIView()
     
     /// 退出控制器
@@ -50,7 +50,7 @@ class IHFMedicImgVC: UIViewController {
         leftbar!.escBtn.addTarget(self, action: #selector(IHFMedicImgVC.medicImgVC_Esc), forControlEvents: .TouchUpInside)
         leftbar!.fourInfoBtn.addTarget(self, action: #selector(IHFMedicImgVC.fourInfoBtnIsShow(_:)), forControlEvents: .TouchUpInside)
         
-        rightBar.frame = CGRectMake(screen_width - bar_Width, 0, bar_Width, screen_height)
+        rightBar = IHFM_VC_RightToolBar.init(frame: CGRectMake(screen_width - bar_Width, 0, bar_Width, screen_height));
         self.view.addSubview(rightBar)
         
         mainView.frame = CGRectMake(bar_Width, 0, screen_width - 2 * bar_Width, screen_height)
