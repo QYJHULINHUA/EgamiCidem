@@ -17,6 +17,10 @@ extension IHFMD_2D_BaseView
         weak var weakSelf:IHFMD_2D_BaseView! = self
         self.reqClass.getSeriesMHD { (statusCode, response) in
 
+        NSNotificationCenter.defaultCenter().postNotificationName("IHFMD_2D_Slider_TotalNumble",
+                object: nil,
+                userInfo: ["totalNum":56, "CurrentlNum" : 28])
+            
             weakSelf.reqPicture(pictureIdx: 0, isMove: false);
         }
     }
@@ -35,7 +39,6 @@ extension IHFMD_2D_BaseView
                 if self.openGLVC == nil
                 {
                     [self .addOpenGlView(ImageData: imageData, RealAspect: 1)];
-//                    [self showImgInitialization];
                 }
             }
         }

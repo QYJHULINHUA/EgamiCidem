@@ -9,8 +9,10 @@
 import UIKit
 
 class IHFMDSliderView: UIView {
+    
     private var btn1:UIButton! // 上面的播放按钮
     private var btn2:UIButton! // 下面的播放按钮
+    private var slider : IHFMDSliderProgress!
     
     
     
@@ -27,7 +29,7 @@ class IHFMDSliderView: UIView {
         btn1.addTarget(self, action: #selector(IHFMDSliderView.Btn1_touch), forControlEvents: .TouchUpInside);
         
         
-        let slider = IHFMDSliderProgress.init(frame:CGRectMake(0, 5,0.7 * frame.size.height,ww - 10));
+        slider = IHFMDSliderProgress.init(frame:CGRectMake(0, 5,0.7 * frame.size.height,ww - 10));
         slider.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2));
         slider.center = CGPointMake(0.5 * frame.size.width, 0.5 * frame.size.height)
         self.addSubview(slider)
@@ -38,6 +40,10 @@ class IHFMDSliderView: UIView {
         btn2.setImage(UIImage.init(named: "IHFPlay200"), forState: .Normal)
         btn2.setImage(UIImage.init(named: "IHFStop200"), forState: .Selected)
         btn2.addTarget(self, action: #selector(IHFMDSliderView.Btn2_touch), forControlEvents: .TouchUpInside);
+    }
+    
+    func setPictureTotalNumAndCurrentNum(totalNum num1:Int?,currentNum num2:Int?)  {
+        slider.sliderSetPictureTotalNumAndCurrentNum(totalNum: num1, currentNum: num2);
     }
     
     func Btn1_touch() {

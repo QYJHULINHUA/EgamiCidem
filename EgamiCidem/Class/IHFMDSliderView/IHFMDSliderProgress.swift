@@ -17,6 +17,9 @@ class IHFMDSliderProgress: UIView {
     private var markValue:Float = -1;
     private var point_width_2:CGFloat!
     private var point_x_max:CGFloat!;
+    var pictureTotalNum = 0;
+    var currentNum = 0;
+    
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
@@ -73,6 +76,26 @@ class IHFMDSliderProgress: UIView {
         }else if panG.state == .Ended
         {
             
+        }
+        
+    }
+    
+    func sliderSetPictureTotalNumAndCurrentNum(totalNum num1:Int?,currentNum num2:Int?)  {
+        if num1 != nil {
+            pictureTotalNum = num1!;
+        }
+        if num2 != nil {
+            currentNum = num2!;
+        }
+        if pictureTotalNum == 0 {
+            currentNum = 0;
+            progressView.progress = 0;
+            centerView.center.x = point_width_2;
+        }else
+        {
+            let value = Float(currentNum)/Float(pictureTotalNum);
+            progressView.progress = value;
+            centerView.center.x = point_width_2 + (CGFloat(value) * progressView_length);
         }
         
     }

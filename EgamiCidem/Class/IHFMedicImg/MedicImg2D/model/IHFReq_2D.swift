@@ -10,7 +10,7 @@ import UIKit
 
 class IHFReq_2D: IHFMedicImgReqClass {
     
-    typealias IHFReq_CallBack = (statusCode:Int ,response:Any)->Void
+    public typealias IHFReq_CallBack = (statusCode:Int ,response:Any)->Void
     
     var pinfo = IHFMedicImg2D_PInfo();
     let seriesMhd = IHFMD_2D_SeriesMHD()

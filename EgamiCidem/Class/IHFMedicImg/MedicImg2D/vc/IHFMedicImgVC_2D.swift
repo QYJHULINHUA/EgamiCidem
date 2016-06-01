@@ -21,12 +21,27 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
         mainView_2D = IHFMD_MainView.init(frame: rectTemp)
         self.mainView.addSubview(mainView_2D)
         self.getSeriresArrr();
-        // Do any additional setup after loading the view.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeValueForSliderNumble(_:)), name: "IHFMD_2D_Slider_TotalNumble", object: nil)
+        
+    }
+    
+    
+    func changeValueForSliderNumble(not:NSNotification) {
+        
+        let userInfo = not.userInfo as! [String: AnyObject]
+        let totalNum = userInfo["totalNum"] as! Int
+        let CurrentlNum = userInfo["CurrentlNum"] as! Int
+        dispatch_async(dispatch_get_main_queue()) {
+            self.rightBar.slider.setPictureTotalNumAndCurrentNum(totalNum: totalNum, currentNum: CurrentlNum)
+        }
+        
     }
     
 
     /// 退出控制器
     override func medicImgVC_Esc() {
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self);
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -69,7 +84,4 @@ class IHFMedicImgVC_2D: IHFMedicImgVC {
         }
     }
     
-    
-
-
 }
